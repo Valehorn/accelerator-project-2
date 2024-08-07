@@ -38,51 +38,152 @@
       </ul>
     </nav>
     <img class="header__logo logo" src="#" alt="Логотип Lifetour" width="142" height="42">
-    <a class="header__phone phone" href="#">8 800 000-00-00</a>
-
-    <main class="page-main">
-      <section class="hero">
-        <h2 class="visually-hidden">Hero презентация.</h2>
-        <div class="swiper swiper-hero">
-          <div class="swiper-slide">
-            <article class="hero__card">
-              <h2>Захватывающие вершины Кавказа</h2>
-              <p>В сопровождении опытных гидов
-                вы пройдёте через потрясающие
-                ландшафты и совершите восход
-                на вершину горы Чегет.</p>
-              <button class="button hero__card-button" type="button">Смотреть тур</button>
-              <p class="hero__card-time">6 дней/5 ночей</p>
-              <p class="hero__card-difficult-rate">Высокая сложность</p>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="hero__card">
-              <h2>Невероятная природа Камчатки</h2>
-              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
-                уголков дикой природы в мире.</p>
-              <div class="hero__card-image-container">
-                <img class="hero__card-image" src="#"
-                  alt="Фотография природы и счастливых, наверное, туристов на Камчатке." width="442" height="365">
-              </div>
-              <button class="button hero__card-button" type="button">Смотреть тур</button>
-              <p class="hero__card-time">9 дней/10 ночей</p>
-              <p class="hero__card-difficult-rate">Средняя сложность</p>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="hero__card">
-              <h2>Магические пейзажи Алтайского Края</h2>
-              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-              <button class="button hero__card-button" type="button">Смотреть тур</button>
-              <p class="hero__card-time">8 дней/7 ночей</p>
-              <p class="hero__card-difficult-rate">Лёгкая сложность</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
+    <a class="header__phone phone" href="tel:88000000000">8 800 000-00-00</a>
   </header>
+  <main class="page-main">
+    <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Hero презентация.</h2>
+      <div class="swiper swiper-hero">
+        <div class="swiper-slide">
+          <article class="hero__card container">
+            <h2>Захватывающие вершины Кавказа</h2>
+            <p>В сопровождении опытных гидов
+              вы пройдёте через потрясающие
+              ландшафты и совершите восход
+              на вершину горы Чегет.</p>
+            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <p class="hero__card-time">6 дней/5 ночей</p>
+            <p class="hero__card-difficult-rate">Высокая сложность</p>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="hero__card container">
+            <h2>Невероятная природа Камчатки</h2>
+            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+              уголков дикой природы в мире.</p>
+            <div class="hero__card-image-container">
+              <img class="hero__card-image" src="#"
+                alt="Фотография природы и счастливых, наверное, туристов на Камчатке." width="442" height="365">
+            </div>
+            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <p class="hero__card-time">9 дней/10 ночей</p>
+            <p class="hero__card-difficult-rate">Средняя сложность</p>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="hero__card container">
+            <h2>Магические пейзажи Алтайского Края</h2>
+            <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
+              дух ландшафтов Алтайских гор.</p>
+            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <p class="hero__card-time">8 дней/7 ночей</p>
+            <p class="hero__card-difficult-rate">Лёгкая сложность</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="tours">
+      <h2 class="tours__title title">Ближайшие туры</h2>
+      <div class="swiper">
+        <div class="swiper-slide">
+          <article class="tours__card card">
+            <img class="tours__image" src="#" alt="Просторы вокруг Эльбруса" width="290" height="416">
+            <div class="card__content">
+              <ul class="card__info-list">
+                <li class="card__info-item card__info-item--place card__info-item--special">Кавказ</li>
+                <li class="card__info-item card__info-item--days">4 дня</li>
+                <li class="card__info-item card__info-item--nights">3 ночи</li>
+              </ul>
+              <h2 class="tour__card-title">Путешествие
+                вокруг Эльбруса</h2>
+              <dl class="card__info-optional-list">
+                <dt class="card__info-optional-item">Сложность:</dt>
+                <dd class="card__info-optional-difficult-rate">
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </dd>
+                <dt class="card__info-optional-item">Даты набора:</dt>
+                <dd class="card__info-optional-description">12.06–19.06</dd>
+                <dt class="card__info-optional-item">Группа:</dt>
+                <dd class="card__info-optional-description">До 15 чел.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="tours__card card">
+            <img class="tours__image" src="#" alt="Подножия Белухи" width="290" height="416">
+            <div class="card__content">
+              <ul class="card__info-list">
+                <li class="card__info-item card__info-item--place card__info-item--special">Алтай</li>
+                <li class="card__info-item card__info-item--days">14 дней</li>
+                <li class="card__info-item card__info-item--nights">13 ночей</li>
+              </ul>
+              <h2 class="tour__card-title">Путь к подножию
+                Белухи</h2>
+              <dl class="card__info-optional-list">
+                <dt class="card__info-optional-item">Сложность:</dt>
+                <dd class="card__info-optional-difficult-rate">
+                  <span class="visually-hidden">3 звезды из 5</span>
+                </dd>
+                <dt class="card__info-optional-item">Даты набора:</dt>
+                <dd class="card__info-optional-description">14.06–23.06</dd>
+                <dt class="card__info-optional-item">Группа:</dt>
+                <dd class="card__info-optional-description">до 25 чел.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="tours__card card">
+            <img class="tours__image" src="#" alt="Горная вершина Фишт" width="290" height="416">
+            <div class="card__content">
+              <ul class="card__info-list">
+                <li class="card__info-item card__info-item--place card__info-item--special">Адыгея</li>
+                <li class="card__info-item card__info-item--days">7 дней</li>
+                <li class="card__info-item card__info-item--nights">6 ночей</li>
+              </ul>
+              <h2 class="tour__card-title">Через Фишт
+                к Чёрному морю и обратно</h2>
+              <dl class="card__info-optional-list">
+                <dt class="card__info-optional-item">Сложность:</dt>
+                <dd class="card__info-optional-difficult-rate">
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </dd>
+                <dt class="card__info-optional-item">Даты набора:</dt>
+                <dd class="card__info-optional-description">15.07–19.07</dd>
+                <dt class="card__info-optional-item">Группа:</dt>
+                <dd class="card__info-optional-description">До 22 чел.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="tours__card card">
+            <img class="tours__image" src="#" alt="Горная вершина Манарага" width="290" height="416">
+            <div class="card__content">
+              <ul class="card__info-list">
+                <li class="card__info-item card__info-item--place card__info-item--special">Урал</li>
+                <li class="card__info-item card__info-item--days">9 дней</li>
+                <li class="card__info-item card__info-item--nights">10 ночей</li>
+              </ul>
+              <h2 class="tour__card-title">Восхождение
+                Манарага</h2>
+              <dl class="card__info-optional-list">
+                <dt class="card__info-optional-item">Сложность:</dt>
+                <dd class="card__info-optional-difficult-rate">
+                  <span class="visually-hidden">5 звезд из 5</span>
+                </dd>
+                <dt class="card__info-optional-item">Даты набора:</dt>
+                <dd class="card__info-optional-description">12.07–19.07</dd>
+                <dt class="card__info-optional-item">Группа:</dt>
+                <dd class="card__info-optional-description">До 7 чел.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- пример использования спрайта -->
   <!--  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
