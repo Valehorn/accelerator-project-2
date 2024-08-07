@@ -4,11 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Организация походов в горы Livetour">
   <title>Lifetour</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
+  <header class="header" data-test="header">
+    <h1 class="visually-hidden">Организация походов в горы Livetour</h1>
+    <nav class="header__nav">
+      <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
+          меню.</span>
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Туры</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Обучение</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Отзывы</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Фотографии</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <img class="header__logo logo" src="#" alt="Логотип Lifetour" width="142" height="42">
+    <a class="header__phone phone" href="#">8 800 000-00-00</a>
+
+    <main class="page-main">
+      <section class="hero">
+        <h2 class="visually-hidden">Hero презентация.</h2>
+        <div class="swiper swiper-hero">
+          <div class="swiper-slide">
+            <article class="hero__card">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов
+                вы пройдёте через потрясающие
+                ландшафты и совершите восход
+                на вершину горы Чегет.</p>
+              <button class="button hero__card-button" type="button">Смотреть тур</button>
+              <p class="hero__card-time">6 дней/5 ночей</p>
+              <p class="hero__card-difficult-rate">Высокая сложность</p>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="hero__card">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                уголков дикой природы в мире.</p>
+              <div class="hero__card-image-container">
+                <img class="hero__card-image" src="#"
+                  alt="Фотография природы и счастливых, наверное, туристов на Камчатке." width="442" height="365">
+              </div>
+              <button class="button hero__card-button" type="button">Смотреть тур</button>
+              <p class="hero__card-time">9 дней/10 ночей</p>
+              <p class="hero__card-difficult-rate">Средняя сложность</p>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="hero__card">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+              <button class="button hero__card-button" type="button">Смотреть тур</button>
+              <p class="hero__card-time">8 дней/7 ночей</p>
+              <p class="hero__card-difficult-rate">Лёгкая сложность</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </header>
+
   <!-- пример использования спрайта -->
   <!--  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
