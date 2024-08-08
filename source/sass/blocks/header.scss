@@ -1,0 +1,38 @@
+@use "../global/variables";
+
+.header {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+.header__nav-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.header__nav-link {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+  }
+}
+
+.header__phone {
+  color: #ffffff;
+}

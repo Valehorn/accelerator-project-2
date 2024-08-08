@@ -1,0 +1,57 @@
+@use "../global/variables";
+
+.about {
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    h2 {
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 21px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

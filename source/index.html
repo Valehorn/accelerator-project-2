@@ -22,29 +22,29 @@
 </head>
 
 <body class="page-body">
-  <header class="header" data-test="header">
+  <header class="header container" data-test="header">
     <h1 class="visually-hidden">Организация походов в горы Livetour</h1>
     <nav class="header__nav">
       <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
           меню.</span>
       </button>
       <ul class="header__nav-list">
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#tours">Туры</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#training">Обучение</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#about">О нас</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#reviews">Отзывы</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#gallery">Фотографии</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link link" href="#contacts">Контакты</a>
         </li>
       </ul>
@@ -65,7 +65,7 @@
               вы пройдёте через потрясающие
               ландшафты и совершите восход
               на вершину горы Чегет.</p>
-            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
             <p class="hero__card-time">6 дней/5 ночей</p>
             <p class="hero__card-difficult-rate">Высокая сложность</p>
           </article>
@@ -93,7 +93,7 @@
                   height="365">
               </picture>
             </div>
-            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
             <p class="hero__card-time">9 дней/10 ночей</p>
             <p class="hero__card-difficult-rate">Средняя сложность</p>
           </article>
@@ -103,7 +103,7 @@
             <h2>Магические пейзажи Алтайского Края</h2>
             <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
               дух ландшафтов Алтайских гор.</p>
-            <button class="button hero__card-button" type="button">Смотреть тур</button>
+            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
             <p class="hero__card-time">8 дней/7 ночей</p>
             <p class="hero__card-difficult-rate">Лёгкая сложность</p>
           </article>
@@ -139,7 +139,7 @@
                 <li class="card__info-item card__info-item--days">4 дня</li>
                 <li class="card__info-item card__info-item--nights">3 ночи</li>
               </ul>
-              <h2 class="tours__card-title">Путешествие
+              <h2 class="card__title">Путешествие
                 вокруг Эльбруса</h2>
               <dl class="card__info-optional-list">
                 <dt class="card__info-optional-item">Сложность:</dt>
@@ -180,7 +180,7 @@
                 <li class="card__info-item card__info-item--days">14 дней</li>
                 <li class="card__info-item card__info-item--nights">13 ночей</li>
               </ul>
-              <h2 class="tours__card-title">Путь к подножию
+              <h2 class="card__title">Путь к подножию
                 Белухи</h2>
               <dl class="card__info-optional-list">
                 <dt class="card__info-optional-item">Сложность:</dt>
@@ -221,7 +221,7 @@
                 <li class="card__info-item card__info-item--days">7 дней</li>
                 <li class="card__info-item card__info-item--nights">6 ночей</li>
               </ul>
-              <h2 class="tours__card-title">Через Фишт
+              <h2 class="card__title">Через Фишт
                 к Чёрному морю и обратно</h2>
               <dl class="card__info-optional-list">
                 <dt class="card__info-optional-item">Сложность:</dt>
@@ -262,7 +262,7 @@
                 <li class="card__info-item card__info-item--days">9 дней</li>
                 <li class="card__info-item card__info-item--nights">10 ночей</li>
               </ul>
-              <h2 class="tours__card-title">Восхождение
+              <h2 class="card__title">Восхождение
                 Манарага</h2>
               <dl class="card__info-optional-list">
                 <dt class="card__info-optional-item">Сложность:</dt>
@@ -455,7 +455,7 @@
           </article>
         </div>
       </div>
-      <h3 class="training__process title">Процесс обучения</h3>
+      <h3 class="training__process-title">Процесс обучения</h3>
       <ol class="training__process-list">
         <li class="training__process-item">
           <p class="training__process-description">Изучение спортивного туристского движения</p>
@@ -823,9 +823,9 @@
       <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
       <form class="form__question" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="phone">Телефон</label>
-        <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон">
+        <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
         <label class="visually-hidden" for="email">Email</label>
-        <input class="form__input" type="email" name="email" id="email" placeholder="Email">
+        <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
       </form>
     </section>
   </main>
@@ -876,22 +876,22 @@
       </div>
       <nav class="footer__nav">
         <ul class="footer__nav-list">
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#tours">Туры</a>
           </li>
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#training">Обучение</a>
           </li>
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#about">О нас</a>
           </li>
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#reviews">Отзывы</a>
           </li>
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#gallery">Фотографии</a>
           </li>
-          <li class="footer__nav-item nav-item">
+          <li class="footer__nav-item">
             <a class="footer__nav-link" href="#contacts">Контакты</a>
           </li>
         </ul>
@@ -913,6 +913,7 @@
           </a>
         </li>
       </ul>
+      <a class="footer__phone phone link" href="tel:88000000000">8 800 000-00-00</a>
       <a class="footer__confidentiality" href="404.html">Политика конфиденциальности</a>
     </footer>
   </div>

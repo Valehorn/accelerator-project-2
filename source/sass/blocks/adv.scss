@@ -1,0 +1,33 @@
+@use "../global/variables";
+
+.adv__card {
+  h3 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    h3 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}

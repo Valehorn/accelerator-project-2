@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+.gallery {
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

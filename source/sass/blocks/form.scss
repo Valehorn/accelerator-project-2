@@ -1,0 +1,57 @@
+@use "../global/variables";
+
+.form {
+  background-color: #808080;
+
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  p {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    h2 {
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary-color;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  width: 258px;
+  min-height: 50px;
+  padding-left: 15px;
+  padding-right: 5px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    min-height: 56px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}

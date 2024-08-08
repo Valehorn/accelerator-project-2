@@ -5,8 +5,24 @@
 @import "global/visually-hidden";
 @import "global/global";
 @import "global/button";
+@import "global/title";
 
 /* Blocks */
+@import "blocks/header";
+@import "blocks/phone";
+@import "blocks/hero";
+@import "blocks/tours";
+@import "blocks/card";
+@import "blocks/training";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/adv";
+@import "blocks/gallery";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/social-list";
+
 
 /* Vendor */
 @import "vendor/normalize";

@@ -1,0 +1,23 @@
+@use "../global/variables";
+
+.reviews__card {
+  p {
+    margin: 0;
+  }
+}
+
+
+.reviews__name {
+  line-height: 12px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.reviews__info {
+  line-height: 12px;
+  font-weight: 300;
+}

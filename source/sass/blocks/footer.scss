@@ -1,0 +1,35 @@
+@use "../global/variables";
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: $primary-text-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.footer__phone {
+  display: none;
+  color: $primary-text-color;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.footer__confidentiality {
+  line-height: 12px;
+  font-weight: 300;
+  text-decoration: none;
+  color: $primary-text-color;
+}
