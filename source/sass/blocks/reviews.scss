@@ -6,6 +6,24 @@
   }
 }
 
+.reviews__card-image-container {
+  width: 250px;
+  height: 169px;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 237px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 258px;
+    height: 253px;
+  }
+}
+
+.reviews__image {
+  display: block;
+}
 
 .reviews__name {
   line-height: 12px;

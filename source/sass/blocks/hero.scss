@@ -21,6 +21,10 @@
 }
 
 .hero__card-image {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   @media (max-width: $pre-tablet-width) {
     display: none;
   }
