@@ -5,6 +5,12 @@
   color: #ffffff;
 }
 
+.header__button-burger-menu {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .header__nav-list {
   display: none;
   list-style: none;
