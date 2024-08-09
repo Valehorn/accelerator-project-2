@@ -12,8 +12,7 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/montserrat-bold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-medium.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-extrabold.woff2" type="font/woff2" as="font"
@@ -22,43 +21,46 @@
 </head>
 
 <body class="page-body">
-  <header class="header container" data-test="header">
-    <h1 class="visually-hidden">Организация походов в горы Livetour</h1>
-    <nav class="header__nav">
-      <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
-          меню.</span>
-      </button>
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#tours">Туры</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#training">Обучение</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#about">О нас</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#reviews">Отзывы</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#gallery">Фотографии</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="#contacts">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__logo-container">
-      <img class="header__logo logo" src="#" alt="Логотип Lifetour" width="142" height="42">
+  <header class="header" data-test="header">
+    <div class="container">
+      <h1 class="visually-hidden">Организация походов в горы Livetour</h1>
+      <nav class="header__nav">
+        <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
+            меню.</span>
+        </button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#tours">Туры</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#training">Обучение</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#about">О нас</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__logo-container">
+        <img class="header__logo logo" src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour" width="142"
+          height="42">
+      </div>
+      <a class="header__phone phone link" href="tel:88000000000">8 800 000-00-00</a>
     </div>
-    <a class="header__phone phone link" href="tel:88000000000">8 800 000-00-00</a>
   </header>
   <main class="page-main">
     <section class="hero" data-test="hero">
       <h2 class="visually-hidden">Hero презентация.</h2>
       <div class="swiper swiper-hero">
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-hero">
           <article class="hero__card container">
             <h2>Захватывающие вершины Кавказа</h2>
             <p>В сопровождении опытных гидов
@@ -70,7 +72,7 @@
             <p class="hero__card-difficult-rate">Высокая сложность</p>
           </article>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-hero">
           <article class="hero__card container">
             <h2>Невероятная природа Камчатки</h2>
             <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
@@ -78,19 +80,19 @@
             <div class="hero__card-image-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-                  width="410" height="459">
+                  srcset="img/hero/hero-card-desktop@1x.webp 1x, img/hero/hero-card-desktop@2x.webp 2x" width="410"
+                  height="459">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-                  width="442" height="365">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-                  width="410" height="459">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
-                  width="442" height="365">
-                <img class="hero__card-image" src="#" alt="Фотография природы и туристов на Камчатке." width="442"
+                  srcset="img/hero/hero-card-tablet@1x.webp 1x, img/hero/hero-card-tablet@2x.webp 2x" width="442"
                   height="365">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="img/hero/hero-card-desktop@1x.png 1x, img/hero/hero-card-desktop@2x.png 2x" width="410"
+                  height="459">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/img/hero/hero-card-tablet@1x.png 1x, img/hero/hero-card-tablet@2x.png 2x" width="442"
+                  height="365">
+                <img class="hero__card-image" src="img/hero/hero-card-tablet@1x.png"
+                  alt="Фотография природы и туристов на Камчатке." width="442" height="365">
               </picture>
             </div>
             <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
@@ -98,7 +100,7 @@
             <p class="hero__card-difficult-rate">Средняя сложность</p>
           </article>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-hero">
           <article class="hero__card container">
             <h2>Магические пейзажи Алтайского Края</h2>
             <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
@@ -110,28 +112,29 @@
         </div>
       </div>
     </section>
-    <section class="tours" data-test="tours" id="tours">
+    <section class="tours container" data-test="tours" id="tours">
       <h2 class="tours__title title">Ближайшие туры</h2>
       <div class="swiper">
         <div class="swiper-slide">
           <article class="tours__card card">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-1@1x.webp 1x, img/tours/tours-desktop-1@2x.webp 2x" width="380"
+                height="416">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-tablet-1@1x.webp 1x, img/tours/tours-tablet-1@2x.webp 2x" width="330"
+                height="416">
               <source type="image/jpeg" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-1@1x.jpg 1x, img/tours/tours-desktop-1@1x.jpg 2x" width="380"
+                height="416">
               <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-tablet-1@1x.jpg 1x, img/tours/tours-tablet-1@2x.jpg 2x" width="330"
+                height="416">
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x"
-                width="290" height="416">
-              <img class="tours__image" src="#" alt="Просторы вокруг Эльбруса" width="290" height="416">
+                srcset="img/tours/tours-mobile-1@1x.webp 1x, img/tours/tours-mobile-1@2x.webp 2x" width="290"
+                height="416">
+              <img class="tours__image" src="img/tours/tours-mobile-1@1x.jpg" alt="Просторы вокруг Эльбруса" width="290"
+                height="416">
             </picture>
             <div class="card__content">
               <ul class="card__info-list">
@@ -158,21 +161,22 @@
           <article class="tours__card card">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-2@1x.webp 1x, img/tours/tours-desktop-2@2x.webp 2x" width="380"
+                height="416">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="330"
+                height="416">
               <source type="image/jpeg" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-2@1x.jgp 1x, img/tours/tours-desktop-2@2x.jgp 2x" width="380"
+                height="416">
               <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-tablet-2@1x.jpg 1x, img/tours/tours-tablet-2@2x.jpg 2x" width="330"
+                height="416">
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x"
-                width="290" height="416">
-              <img class="tours__image" src="#" alt="Подножия Белухи" width="290" height="416">
+                srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="290"
+                height="416">
+              <img class="tours__image" src="img/tours/tours-tablet-2@1x.jpg" alt="Подножия Белухи" width="290"
+                height="416">
             </picture>
             <div class="card__content">
               <ul class="card__info-list">
@@ -199,21 +203,22 @@
           <article class="tours__card card">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="380"
+                height="416">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="330"
+                height="416">
               <source type="image/jpeg" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="380"
+                height="416">
               <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="330"
+                height="416">
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x"
-                width="290" height="416">
-              <img class="tours__image" src="#" alt="Горная вершина Фишт" width="290" height="416">
+                srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="290"
+                height="416">
+              <img class="tours__image" src="img/tours/tours-desktop-3@1x.jpg" alt="Горная вершина Фишт" width="290"
+                height="416">
             </picture>
             <div class="card__content">
               <ul class="card__info-list">
@@ -240,21 +245,22 @@
           <article class="tours__card card">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="380"
+                height="416">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="330"
+                height="416">
               <source type="image/jpeg" media="(min-width: 1440px)"
-                srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-                width="380" height="416">
+                srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="380"
+                height="416">
               <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
-                width="330" height="416">
+                srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="330"
+                height="416">
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x"
-                width="290" height="416">
-              <img class="tours__image" src="#" alt="Горная вершина Манарага" width="290" height="416">
+                srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="290"
+                height="416">
+              <img class="tours__image" src="img/tours/tours-desktop-4@1x.jpg" alt="Горная вершина Манарага" width="290"
+                height="416">
             </picture>
             <div class="card__content">
               <ul class="card__info-list">

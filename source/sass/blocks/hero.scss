@@ -19,3 +19,9 @@
     margin: 0;
   }
 }
+
+.hero__card-image {
+  @media (max-width: $pre-tablet-width) {
+    display: none;
+  }
+}
