@@ -20,6 +20,18 @@
   }
 }
 
+.training__image-container {
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 182.67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
+}
+
 .training__description-container {
   p:first-of-type {
     font-size: 14px;
