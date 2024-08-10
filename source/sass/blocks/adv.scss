@@ -1,6 +1,23 @@
 @use "../global/variables";
 
+.adv {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    background-image:
+      image-set(url("../../img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/adv/adv-bg-clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/adv/adv-bg-clouds-tablet@1x.png") type("image/png") 1x,
+      url("../../img/adv/adv-bg-clouds-tablet@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: 2091px 996px;
+    background-position: center;
+  }
+}
+
 .adv__card {
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  background-position: center top;
+
   h3 {
     font-size: 14px;
     line-height: 14px;
@@ -13,6 +30,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    background-size: 48px 48px;
+
     h3 {
       font-size: 16px;
       line-height: 16px;
@@ -25,9 +44,32 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-size: 54px 54px;
+
     h3 {
       font-size: 18px;
       line-height: 18px;
     }
   }
 }
+
+.adv__card--safety {
+  background-image: url("/__spritemap#sprite-safety-view");
+}
+
+.adv__card--knowledge {
+  background-image: url("/__spritemap#sprite-knowledge-view");
+}
+
+.adv__card--equipment {
+  background-image: url("/__spritemap#sprite-equipment-view");
+}
+
+.adv__card--routes {
+  background-image: url("/__spritemap#sprite-routes-view");
+}
+
+.adv__card--ecology {
+  background-image: url("/__spritemap#sprite-ecology-view");
+}
+
