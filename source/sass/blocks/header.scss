@@ -5,6 +5,11 @@
   color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .header__container {
@@ -13,11 +18,15 @@
   justify-content: space-between;
 }
 
-.header__group {
+.header__group-phone {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
 }
 
 .header__button-burger-menu {
@@ -84,4 +93,8 @@
 .header__phone {
   color: #ffffff;
   align-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }
