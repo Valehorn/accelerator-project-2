@@ -21,6 +21,51 @@
   margin: 0;
 }
 
+.contacts__item {
+  --icon-image: 0;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: var(--icon-image);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+    }
+  }
+}
+
+.contacts__item--phone {
+  --icon-image: url("/__spritemap#sprite-phone-view");
+}
+
+.contacts__item--email {
+  --icon-image: url("/__spritemap#sprite-mail-view");
+}
+
+.contacts__item--address {
+  --icon-image: url("/__spritemap#sprite-pin-contacts-view");
+}
+
 .contacts__item-title {
   font-size: 14px;
   line-height: 14px;
