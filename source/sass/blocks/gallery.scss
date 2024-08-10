@@ -19,3 +19,36 @@
     }
   }
 }
+
+.gallery__content-container {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
+}
+
+.gallery__image-container {
+  width: 158px;
+  height: 266px;
+
+  @media (min-width: $tablet-width) {
+    width: 253px;
+    height: 425px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+    height: 463px;
+  }
+}
+
+.gallery__image {
+  display: block;
+  object-fit: cover;
+}
