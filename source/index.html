@@ -24,36 +24,40 @@
   <header class="header" data-test="header">
     <div class="container">
       <h1 class="visually-hidden">Организация походов в горы Livetour</h1>
-      <nav class="header__nav">
-        <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
-            меню.</span>
-        </button>
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#tours">Туры</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#training">Обучение</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#about">О нас</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__logo-container">
-        <img class="header__logo logo" src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour" width="142"
-          height="41">
+      <div class="header__container">
+        <nav class="header__nav">
+          <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
+              меню.</span>
+          </button>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#tours">Туры</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#training">Обучение</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#about">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__group">
+          <div class="header__logo-container">
+            <img class="header__logo logo" src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour" width="142"
+              height="41">
+          </div>
+          <a class="header__phone phone link" href="tel:88000000000">8 800 000-00-00</a>
+        </div>
       </div>
-      <a class="header__phone phone link" href="tel:88000000000">8 800 000-00-00</a>
     </div>
   </header>
   <main class="page-main">
@@ -868,7 +872,7 @@
     </section>
   </main>
   <div class="contacts-footer-wrapper" data-test="footer">
-    <section class="contacts" id="contacts">
+    <section class="contacts container" id="contacts">
       <h2 class="contacts__title title">Контакты</h2>
       <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
         увлекательными историями и подобрать для вас тур.</p>
@@ -908,9 +912,10 @@
         </picture>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__logo-container">
-        <img class="footer__logo logo" src="/__spritemap#sprite-logo-footer-view" alt="Логотип Lifetour" width="142" height="42">
+        <img class="footer__logo logo" src="/__spritemap#sprite-logo-footer-view" alt="Логотип Lifetour" width="142"
+          height="42">
       </div>
       <nav class="footer__nav">
         <ul class="footer__nav-list">
