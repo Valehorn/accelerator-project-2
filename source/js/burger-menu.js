@@ -4,16 +4,19 @@ const body = document.querySelector('.page-body');
 const nav = document.querySelector('.header__nav');
 const burgerButton = document.querySelector('.header__button-burger-menu');
 const navList = document.querySelector('.header__nav-list');
+const header = document.querySelector('.header');
 
 const openMenu = () => {
   body.classList.add('page-body--menu-open');
   nav.classList.add('header__nav--open');
+  header.style.setProperty('--bg-opacity', '1');
   document.addEventListener('keydown', onDocumentKeyDown);
 };
 
 const closeMenu = () => {
   body.classList.remove('page-body--menu-open');
   nav.classList.remove('header__nav--open');
+  header.style.setProperty('--bg-opacity', '0');
   document.removeEventListener('keydown', onDocumentKeyDown);
 };
 
@@ -38,8 +41,8 @@ function onDocumentKeyDown (evt) {
 }
 
 navList.addEventListener('click', (evt) => {
-  const navListItem = evt.target.closest('.header__nav-item');
-  if (!navListItem) {
+  const navLink = evt.target.closest('.header__nav-link');
+  if (!navLink) {
     return;
   }
   closeMenu();
