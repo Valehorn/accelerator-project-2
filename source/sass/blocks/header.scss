@@ -11,37 +11,29 @@
     padding-bottom: 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 42px;
     padding-bottom: 42px;
   }
 }
 
 .header__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 0;
 
-  @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-  }
-}
-
-.header__nav {
-  @media (min-width: $desktop-width) {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 }
 
-.header__group-phone {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 14px;
+.header__nav {
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    display: contents;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -73,18 +65,42 @@
   }
 }
 
+.header__button-burger-menu--open {
+  &::after {
+    mask-image: url("/__spritemap#sprite-cross-view");
+    width: 21.27px;
+    height: 21.27px;
+    mask-size: 21.27px 21.27px;
+  }
+}
+
 .header__nav-list {
+  position: absolute;
   display: none;
   list-style: none;
+  background-color: $primary-color;
   margin: 0;
   padding: 0;
 
   @media (min-width: $desktop-width) {
+    position: static;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     width: 838px;
+  }
+}
+
+.header__nav-list--open {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  /* width: 100vw; */
+
+  @media (min-width: $tablet-width) {
+    gap: 26px;
   }
 }
 
@@ -108,18 +124,24 @@
 .header__logo-container {
   width: 142px;
   height: 42px;
-  margin-right: 31px;
 
   @media (min-width: $desktop-width) {
     order: -1;
+    margin-right: 31px;
   }
 }
 
 .header__phone {
   color: #ffffff;
-  align-self: flex-end;
+  grid-column: 2 / -1;
+  justify-self: end;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
+    grid-column: 3 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
   }
 }
