@@ -8,7 +8,6 @@
 .page-body--menu-open {
   @media (max-width: $pre-desktop-width) {
     position: relative;
-    height: 100vh;
     overflow: hidden;
 
     &::after {
