@@ -2,3 +2,10 @@
 // import Swiper from "swiper";
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
+import { burgerMenuToggle } from './burger-menu';
+
+const bootStrap = () => {
+  burgerMenuToggle();
+};
+
+bootStrap();
