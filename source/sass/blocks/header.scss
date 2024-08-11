@@ -38,7 +38,7 @@
 .header__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px 0;
+  gap: 17px 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
@@ -79,6 +79,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
+  transform: translate(-7px, -7px);
   border: 1px solid transparent;
 
   &::after {
@@ -87,10 +88,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
-    width: 26px;
-    height: 18.91px;
+    width: 27px;
+    height: 19.91px;
     mask-image: url("/__spritemap#sprite-burger-menu-view");
-    mask-size: 26px 18.91px;
+    mask-size: 27px 19.91px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: #ffffff;
@@ -164,6 +165,7 @@
 .header__logo-container {
   width: 142px;
   height: 42px;
+  transform: translateX(3px);
 
   @media (min-width: $desktop-width) {
     order: -1;
