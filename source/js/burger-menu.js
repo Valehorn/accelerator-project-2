@@ -9,14 +9,12 @@ const openMenu = () => {
   body.classList.add('page-body--menu-open');
   nav.classList.add('header__nav--open');
   document.addEventListener('keydown', onDocumentKeyDown);
-  /* navList.style.height = 'auto'; */
 };
 
 const closeMenu = () => {
   body.classList.remove('page-body--menu-open');
   nav.classList.remove('header__nav--open');
   document.removeEventListener('keydown', onDocumentKeyDown);
-  /* navList.style.height = '0'; */
 };
 
 const toggleMenu = () => {
