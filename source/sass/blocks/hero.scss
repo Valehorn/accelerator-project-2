@@ -6,17 +6,30 @@
 }
 
 .hero__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 472px;
+
   h2 {
     font-size: 26px;
     line-height: 26px;
     font-weight: 800;
     margin: 0;
+    margin-bottom: 15px;
   }
 
   p {
     font-size: 15px;
     line-height: 20px;
     margin: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 390px;
   }
 }
 
@@ -30,11 +43,25 @@
   }
 }
 
+.hero__time-difficult-group {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.hero__card-button {
+  min-width: 180px;
+  min-height: 56px;
+}
+
 // Swiper
 
-.hero__swiper {
+.hero .hero__swiper {
   min-width: 320px;
   max-width: 320px;
+  z-index: 0;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -51,6 +78,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 568px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     min-height: 1034px;
@@ -131,4 +159,33 @@
       url("../../img/hero/hero-desktop-3@1x.png") type("image/png") 1x,
       url("../../img/hero/hero-desktop-3@2x.png") type("image/png") 2x);
   }
+}
+
+.hero__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.hero__pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.hero__pagination-bullet--active {
+  background-color: #ffffff;
 }

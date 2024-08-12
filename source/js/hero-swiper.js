@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/scss';
+import 'swiper/scss/pagination';
 
 const heroSwiperContainer = document.querySelector('.hero__swiper');
 
@@ -16,6 +16,8 @@ const heroSwiperInit = () => {
       el: '.hero__pagination',
       clickable: false,
       bulletElement: 'button type="button"',
+      bulletClass: 'hero__pagination-bullet',
+      bulletActiveClass: 'hero__pagination-bullet--active',
     },
     breakpoints: {
       1440: {
