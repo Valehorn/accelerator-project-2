@@ -124,11 +124,13 @@
 
   @media (min-width: $desktop-width) {
     position: static;
+    visibility: visible;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     width: 838px;
+    padding-left: 46px;
   }
 
   @media (max-width: $pre-desktop-width) {
@@ -169,6 +171,7 @@
 
   @media (min-width: $desktop-width) {
     font-weight: 400;
+    padding: 8px 0;
   }
 }
 
@@ -184,7 +187,8 @@
 
   @media (min-width: $desktop-width) {
     order: -1;
-    margin-right: 31px;
+    transform: translate(-7px, 1px);
+    justify-self: end;
   }
 }
 
