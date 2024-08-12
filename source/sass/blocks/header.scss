@@ -104,6 +104,10 @@
     transition: background-color 0.5s ease;
   }
 
+  @media (min-width: $tablet-width) {
+    transform: translate(-7px, 0);
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -173,6 +177,11 @@
   height: 42px;
   transform: translateX(3px);
 
+  @media (min-width: $tablet-width) {
+    transform: translate(0, 1px);
+    justify-self: center;
+  }
+
   @media (min-width: $desktop-width) {
     order: -1;
     margin-right: 31px;
@@ -186,6 +195,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / -1;
+    transform: translateY(2px);
   }
 
   @media (min-width: $desktop-width) {
