@@ -1,11 +1,9 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
 import { burgerMenuToggle } from './burger-menu';
+import { heroSwiperInit } from './hero-swiper';
 
 const bootStrap = () => {
   burgerMenuToggle();
+  heroSwiperInit();
 };
 
 bootStrap();

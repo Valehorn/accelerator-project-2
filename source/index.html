@@ -29,26 +29,26 @@
           <button class="header__button-burger-menu" type="button"><span class="visually-hidden">Кнопка бургер
               меню.</span>
           </button>
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#tours">Туры</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#training">Обучение</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#about">О нас</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#reviews">Отзывы</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#gallery">Фотографии</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#tours">Туры</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#training">Обучение</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#about">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
         </nav>
         <div class="header__logo-container">
           <img class="header__logo logo" src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour" width="142"
@@ -61,57 +61,60 @@
   <main class="page-main">
     <section class="hero" data-test="hero">
       <h2 class="visually-hidden">Hero презентация.</h2>
-      <div class="swiper swiper-hero">
-        <div class="swiper-slide swiper-slide-hero">
-          <article class="hero__card container">
-            <h2>Захватывающие вершины Кавказа</h2>
-            <p>В сопровождении опытных гидов
-              вы пройдёте через потрясающие
-              ландшафты и совершите восход
-              на вершину горы Чегет.</p>
-            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
-            <p class="hero__card-time">6 дней/5 ночей</p>
-            <p class="hero__card-difficult-rate">Высокая сложность</p>
-          </article>
+      <div class="hero__swiper swiper">
+        <div class="hero__swiper-wrapper swiper-wrapper">
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card container">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов
+                вы пройдёте через потрясающие
+                ландшафты и совершите восход
+                на вершину горы Чегет.</p>
+              <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
+              <p class="hero__card-time">6 дней/5 ночей</p>
+              <p class="hero__card-difficult-rate">Высокая сложность</p>
+            </article>
+          </div>
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card container">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                уголков дикой природы в мире.</p>
+              <div class="hero__card-image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop@1x.webp 1x, img/hero/hero-card-desktop@2x.webp 2x" width="410"
+                    height="459">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet@1x.webp 1x, img/hero/hero-card-tablet@2x.webp 2x" width="442"
+                    height="365">
+                  <source type="image/png" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop@1x.png 1x, img/hero/hero-card-desktop@2x.png 2x" width="410"
+                    height="459">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/img/hero/hero-card-tablet@1x.png 1x, img/hero/hero-card-tablet@2x.png 2x" width="442"
+                    height="365">
+                  <img class="hero__card-image" src="img/hero/hero-card-tablet@1x.png"
+                    alt="Фотография природы и туристов на Камчатке." width="442" height="365">
+                </picture>
+              </div>
+              <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
+              <p class="hero__card-time">9 дней/10 ночей</p>
+              <p class="hero__card-difficult-rate">Средняя сложность</p>
+            </article>
+          </div>
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card container">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
+                дух ландшафтов Алтайских гор.</p>
+              <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
+              <p class="hero__card-time">8 дней/7 ночей</p>
+              <p class="hero__card-difficult-rate">Лёгкая сложность</p>
+            </article>
+          </div>
         </div>
-        <div class="swiper-slide swiper-slide-hero">
-          <article class="hero__card container">
-            <h2>Невероятная природа Камчатки</h2>
-            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
-              уголков дикой природы в мире.</p>
-            <div class="hero__card-image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/hero/hero-card-desktop@1x.webp 1x, img/hero/hero-card-desktop@2x.webp 2x" width="410"
-                  height="459">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/hero/hero-card-tablet@1x.webp 1x, img/hero/hero-card-tablet@2x.webp 2x" width="442"
-                  height="365">
-                <source type="image/png" media="(min-width: 1440px)"
-                  srcset="img/hero/hero-card-desktop@1x.png 1x, img/hero/hero-card-desktop@2x.png 2x" width="410"
-                  height="459">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="img/img/hero/hero-card-tablet@1x.png 1x, img/hero/hero-card-tablet@2x.png 2x" width="442"
-                  height="365">
-                <img class="hero__card-image" src="img/hero/hero-card-tablet@1x.png"
-                  alt="Фотография природы и туристов на Камчатке." width="442" height="365">
-              </picture>
-            </div>
-            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
-            <p class="hero__card-time">9 дней/10 ночей</p>
-            <p class="hero__card-difficult-rate">Средняя сложность</p>
-          </article>
-        </div>
-        <div class="swiper-slide swiper-slide-hero">
-          <article class="hero__card container">
-            <h2>Магические пейзажи Алтайского Края</h2>
-            <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
-              дух ландшафтов Алтайских гор.</p>
-            <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
-            <p class="hero__card-time">8 дней/7 ночей</p>
-            <p class="hero__card-difficult-rate">Лёгкая сложность</p>
-          </article>
-        </div>
+        <div class="hero__pagination swiper-pagination"></div>
       </div>
     </section>
     <div class="tours-training-bg-wrapper">
