@@ -14,8 +14,16 @@ const heroSwiperInit = () => {
     loop: true,
     pagination: {
       el: '.hero__pagination',
-      clickable: true,
+      clickable: false,
       bulletElement: 'button type="button"',
+    },
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+        pagination: {
+          clickable: true,
+        }
+      },
     }
   });
 

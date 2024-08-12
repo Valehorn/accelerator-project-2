@@ -55,6 +55,10 @@
   @media (min-width: $tablet-width) {
     min-height: 1034px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
 }
 
 .hero__slide--caucasus {
