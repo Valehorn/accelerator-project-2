@@ -30,6 +30,17 @@
 
   @media (min-width: $tablet-width) {
     min-height: 390px;
+
+    h2 {
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -74,13 +85,14 @@
   }
 }
 
-.hero__slide {
+.hero .hero__slide {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 568px;
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     min-height: 1034px;
   }
 
