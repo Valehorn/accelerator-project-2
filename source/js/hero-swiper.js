@@ -9,7 +9,7 @@ const heroSwiperInit = () => {
   const heroSwiper = new Swiper(heroSwiperContainer, {
     modules: [Pagination],
     speed: 600,
-    spaceBetween: 40,
+    spaceBetween: 10,
     slidesPerView: 1,
     loop: true,
     pagination: {
