@@ -42,6 +42,23 @@
       margin-bottom: 35px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    text-align: start;
+    min-height: 800px;
+
+    h2 {
+      font-size: 77px;
+      line-height: 77px;
+      width: 780px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      width: 420px;
+    }
+  }
 }
 
 .hero__card-image {
@@ -56,16 +73,31 @@
 
 .hero__time-difficult-group {
   display: none;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
   }
+}
+
+.hero .hero__card-time {
+  width: 154px;
+}
+
+.hero .hero__card-difficult-rate {
+  width: 184px;
 }
 
 .hero__card-button {
   min-width: 180px;
   min-height: 56px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: auto;
+  }
 }
+
 
 // Swiper
 
