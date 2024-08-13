@@ -1,6 +1,7 @@
 @use "../global/variables";
 
 .hero {
+  position: relative;
   color: #ffffff;
   background-color: #d6d6d6;
 }
@@ -9,8 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  min-height: 568px;
+  padding-top: 145px;
 
   h2 {
     font-size: 26px;
@@ -28,6 +30,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 1034px;
+
     h2 {
       font-size: 56px;
       line-height: 56px;
@@ -43,6 +47,7 @@
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     text-align: start;
+    min-height: 800px;
 
     h2 {
       font-size: 77px;
@@ -58,24 +63,27 @@
 }
 
 .hero__card-image-container {
-  max-height: 568px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 1034px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 800px;
-  }
+  position: absolute;
+  top: 0;
+  height: 568px;
 }
 
 .hero__card-content-group {
-  position: absolute;
   z-index: 1;
+}
+
+.hero__card-image-content-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
 }
 
 .hero__card-image-content {
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 
@@ -86,22 +94,55 @@
 
 .hero__time-difficult-group {
   display: none;
-  font-size: 12px;
-  line-height: 16px;
 
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 10px;
   }
 }
 
 .hero .hero__card-time {
-  width: 154px;
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 155px;
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      left: 21px;
+      content: "";
+      width: 11px;
+      height: 11px;
+      mask-image: url("/__spritemap#sprite-moon-view");
+      mask-size: 11px 11px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: #ffffff;
+    }
+  }
 }
 
 .hero .hero__card-difficult-rate {
-  width: 184px;
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 186px;
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      left: 21px;
+      content: "";
+      width: 11px;
+      height: 11px;
+      mask-image: url("/__spritemap#sprite-level-view");
+      mask-size: 11px 11px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: #ffffff;
+    }
+  }
 }
 
 .hero__card-button {
@@ -109,7 +150,7 @@
   min-height: 56px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: auto;
+    margin-bottom: 134px;
   }
 }
 
@@ -139,85 +180,21 @@
   }
 }
 
-/* .hero__slide--caucasus {
-  background-image:
-    image-set(url("../../img/hero/hero-mobile-1@1x.webp") type("image/webp") 1x,
-    url("../../img/hero/hero-mobile-1@2x.webp") type("image/webp") 2x,
-    url("../../img/hero/hero-mobile-1@1x.png") type("image/png") 1x,
-    url("../../img/hero/hero-mobile-1@2x.png") type("image/png") 2x);
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-tablet-1@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-tablet-1@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-tablet-1@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-tablet-1@2x.png") type("image/png") 2x);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-desktop-1@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-desktop-1@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-desktop-1@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-desktop-1@2x.png") type("image/png") 2x);
-  }
-}
-
-.hero__slide--kamchatka {
-  background-image:
-    image-set(url("../../img/hero/hero-mobile-2@1x.webp") type("image/webp") 1x,
-    url("../../img/hero/hero-mobile-2@2x.webp") type("image/webp") 2x,
-    url("../../img/hero/hero-mobile-2@1x.png") type("image/png") 1x,
-    url("../../img/hero/hero-mobile-2@2x.png") type("image/png") 2x);
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-tablet-2@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-tablet-2@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-tablet-2@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-tablet-2@2x.png") type("image/png") 2x);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-desktop-2@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-desktop-2@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-desktop-2@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-desktop-2@2x.png") type("image/png") 2x);
-  }
-}
-
-.hero__slide--altay {
-  background-image:
-    image-set(url("../../img/hero/hero-mobile-3@1x.webp") type("image/webp") 1x,
-    url("../../img/hero/hero-mobile-3@2x.webp") type("image/webp") 2x,
-    url("../../img/hero/hero-mobile-3@1x.png") type("image/png") 1x,
-    url("../../img/hero/hero-mobile-3@2x.png") type("image/png") 2x);
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-tablet-3@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-tablet-3@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-tablet-3@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-tablet-3@2x.png") type("image/png") 2x);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image:
-      image-set(url("../../img/hero/hero-desktop-3@1x.webp") type("image/webp") 1x,
-      url("../../img/hero/hero-desktop-3@2x.webp") type("image/webp") 2x,
-      url("../../img/hero/hero-desktop-3@1x.png") type("image/png") 1x,
-      url("../../img/hero/hero-desktop-3@2x.png") type("image/png") 2x);
-  }
-} */
-
 .hero .hero__pagination {
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 40px;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
+    bottom: 93px;
+    left: auto;
+    right: 120px;
+    transform: translate(0, 0);
     padding-bottom: 0;
   }
 }
@@ -228,6 +205,7 @@
   border: 1px solid #ffffff;
   border-radius: 100%;
   background-color: transparent;
+  cursor: pointer;
   transition: background-color 0.5s ease;
 
   @media (min-width: $tablet-width) {

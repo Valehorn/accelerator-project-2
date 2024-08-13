@@ -1,7 +1,6 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import { Pagination } from 'swiper/modules';
 import 'swiper/scss';
-import 'swiper/scss/pagination';
 
 const heroSwiperContainer = document.querySelector('.hero__swiper');
 
