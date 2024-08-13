@@ -68,6 +68,42 @@
   }
 }
 
+.hero__card--kamchatka {
+  @media (min-width: $desktop-width) {
+    h2 {
+      width: 806px;
+    }
+
+    p {
+      width: 464px;
+    }
+
+    .hero__card-button {
+      margin-bottom: 100px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    padding-top: 137px;
+  }
+}
+
+.hero__card--altay {
+  @media (min-width: $desktop-width) {
+    h2 {
+      width: 944px;
+    }
+
+    p {
+      width: 464px;
+    }
+
+    .hero__card-button {
+      margin-bottom: 100px;
+    }
+  }
+}
+
 .hero__card-image-container {
   position: absolute;
   top: 0;
@@ -81,7 +117,17 @@
 .hero__card-image-content-container {
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 1px;
+    bottom: 197px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 50%;
+    left: auto;
+    right: 190px;
+    transform: translate(0, 56%);
     pointer-events: none;
   }
 }
