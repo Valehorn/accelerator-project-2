@@ -63,8 +63,30 @@
       <h2 class="visually-hidden">Hero презентация.</h2>
       <div class="hero__swiper swiper">
         <div class="hero__swiper-wrapper swiper-wrapper">
-          <div class="hero__slide swiper-slide hero__slide--caucasus">
-            <article class="hero__card container">
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card">
+              <div class="hero__card-image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-1@1x.webp 1x, img/hero/hero-card-desktop-1@2x.webp 2x" width="1440"
+                    height="800">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-1@1x.webp 1x, img/hero/hero-card-tablet-1@2x.webp 2x" width="768"
+                    height="1034">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-1@1x.jpg 1x, img/hero/hero-card-desktop-1@2x.jpg 2x" width="1440"
+                    height="800">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-1@1x.jpg 1x, img/hero/hero-card-tablet-1@2x.jpg 2x" width="768"
+                    height="1034">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/hero/hero-card-mobile-1@1x.webp 1x, img/hero/hero-card-mobile-1@1x.webp 2x" width="320"
+                    height="568">
+                  <img class="hero__image" src="img/hero/hero-card-mobile-1@1x.jpg" alt="Просторы вокруг Эльбруса"
+                    width="320" height="568">
+                </picture>
+              </div>
+              <div class="hero__card-content-group container">
               <h2>Захватывающие вершины Кавказа</h2>
               <p>В сопровождении опытных гидов
                 вы пройдёте через потрясающие
@@ -75,14 +97,37 @@
                 <p class="hero__card-time hero-card-details">6 дней/5 ночей</p>
                 <p class="hero__card-difficult-rate hero-card-details">Высокая сложность</p>
               </div>
+            </div>
             </article>
           </div>
-          <div class="hero__slide swiper-slide hero__slide--kamchatka">
-            <article class="hero__card container">
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card">
+              <div class="hero__card-image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-2@1x.webp 1x, img/hero/hero-card-desktop-2@2x.webp 2x" width="1440"
+                    height="800">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-2@1x.webp 1x, img/hero/hero-card-tablet-2@2x.webp 2x" width="768"
+                    height="1034">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-2@1x.jpg 1x, img/hero/hero-card-desktop-2@2x.jpg 2x" width="1440"
+                    height="800">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-2@1x.jpg 1x, img/hero/hero-card-tablet-2@2x.jpg 2x" width="768"
+                    height="1034">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/hero/hero-card-mobile-2@1x.webp 1x, img/hero/hero-card-mobile-2@1x.webp 2x" width="320"
+                    height="568">
+                  <img class="hero__image" src="img/hero/hero-card-mobile-2@1x.jpg" alt="Просторы вокруг Эльбруса"
+                    width="320" height="568">
+                </picture>
+              </div>
+              <div class="hero__card-content-group container">
               <h2>Невероятная природа Камчатки</h2>
               <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                 уголков дикой природы в мире.</p>
-              <div class="hero__card-image-container">
+              <div class="hero__card-image-content-container">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
                     srcset="img/hero/hero-card-desktop@1x.webp 1x, img/hero/hero-card-desktop@2x.webp 2x" width="410"
@@ -96,7 +141,7 @@
                   <source type="image/png" media="(min-width: 768px)"
                     srcset="img/img/hero/hero-card-tablet@1x.png 1x, img/hero/hero-card-tablet@2x.png 2x" width="442"
                     height="365">
-                  <img class="hero__card-image" src="img/hero/hero-card-tablet@1x.png"
+                  <img class="hero__card-image-content" src="img/hero/hero-card-tablet@1x.png"
                     alt="Фотография природы и туристов на Камчатке." width="442" height="365">
                 </picture>
               </div>
@@ -105,17 +150,41 @@
                 <p class="hero__card-time hero-card-details">9 дней/10 ночей</p>
                 <p class="hero__card-difficult-rate hero-card-details">Средняя сложность</p>
               </div>
+            </div>
             </article>
           </div>
-          <div class="hero__slide swiper-slide hero__slide--altay">
-            <article class="hero__card container">
-              <h2>Магические пейзажи Алтайского Края</h2>
-              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
-                дух ландшафтов Алтайских гор.</p>
-              <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
-              <div class="hero__time-difficult-group">
-                <p class="hero__card-time hero-card-details">8 дней/7 ночей</p>
-                <p class="hero__card-difficult-rate hero-card-details">Лёгкая сложность</p>
+          <div class="hero__slide swiper-slide">
+            <article class="hero__card">
+              <div class="hero__card-image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-3@1x.webp 1x, img/hero/hero-card-desktop-3@2x.webp 2x" width="1440"
+                    height="800">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-3@1x.webp 1x, img/hero/hero-card-tablet-3@2x.webp 2x" width="768"
+                    height="1034">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/hero/hero-card-desktop-3@1x.jpg 1x, img/hero/hero-card-desktop-3@2x.jpg 2x" width="1440"
+                    height="800">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/hero/hero-card-tablet-3@1x.jpg 1x, img/hero/hero-card-tablet-3@2x.jpg 2x" width="768"
+                    height="1034">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/hero/hero-card-mobile-3@1x.webp 1x, img/hero/hero-card-mobile-3@1x.webp 2x" width="320"
+                    height="568">
+                  <img class="hero__image" src="img/hero/hero-card-mobile-3@1x.jpg" alt="Просторы вокруг Эльбруса"
+                    width="320" height="568">
+                </picture>
+              </div>
+              <div class="hero__card-content-group container">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
+                  дух ландшафтов Алтайских гор.</p>
+                <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
+                <div class="hero__time-difficult-group">
+                  <p class="hero__card-time hero-card-details">8 дней/7 ночей</p>
+                  <p class="hero__card-difficult-rate hero-card-details">Лёгкая сложность</p>
+                </div>
               </div>
             </article>
           </div>
