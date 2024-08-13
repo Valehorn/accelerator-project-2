@@ -51,16 +51,19 @@
     align-items: flex-start;
     text-align: start;
     min-height: 800px;
+    padding-top: 200px;
 
     h2 {
       font-size: 77px;
       line-height: 77px;
       width: 780px;
-      margin-bottom: 35px;
+      margin-bottom: 23px;
     }
 
     p {
       width: 420px;
+      margin: 0;
+      margin-bottom: 35px;
     }
   }
 }
@@ -194,7 +197,7 @@
   z-index: 1;
 
   @media (min-width: $desktop-width) {
-    bottom: 93px;
+    bottom: 110px;
     left: auto;
     right: 120px;
     transform: translate(0, 0);
