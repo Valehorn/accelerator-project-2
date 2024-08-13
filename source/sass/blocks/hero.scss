@@ -81,6 +81,8 @@
 .hero__card-image-content-container {
   @media (min-width: $tablet-width) {
     position: absolute;
+    bottom: 1px;
+    pointer-events: none;
   }
 }
 
