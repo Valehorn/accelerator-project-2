@@ -41,7 +41,7 @@ const heroSwiperInit = () => {
     const activeIndex = swiperSlide.activeIndex;
 
     slides.forEach((slide, index) => {
-      const slideButtons = slide.querySelectorAll('button');
+      const slideButtons = slide.querySelectorAll('.hero__card-button');
       if (slideButtons.length > 0) {
         if (index === activeIndex) {
           slideButtons.forEach((button) => {
