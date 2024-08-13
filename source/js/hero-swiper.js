@@ -28,7 +28,6 @@ const heroSwiperInit = () => {
       },
     }
   });
-
   heroSwiper.on('init', () => {
     updateTabIndex(heroSwiper);
   });
@@ -43,18 +42,22 @@ const heroSwiperInit = () => {
 
     slides.forEach((slide, index) => {
       const slideButtons = slide.querySelectorAll('button');
-      if (index === activeIndex) {
-        slideButtons.forEach((button) => {
-          button.removeAttribute('tabindex');
-        });
-      } else {
-        slideButtons.forEach((button) => {
-          button.setAttribute('tabindex', '-1');
-        });
+      if (slideButtons.length > 0) {
+        if (index === activeIndex) {
+          slideButtons.forEach((button) => {
+            button.removeAttribute('tabindex');
+          });
+        } else {
+          slideButtons.forEach((button) => {
+            button.setAttribute('tabindex', '-1');
+          });
+        }
       }
     });
   }
+
   heroSwiper.init();
+  updateTabIndex(heroSwiper);
 };
 
 export { heroSwiperInit };

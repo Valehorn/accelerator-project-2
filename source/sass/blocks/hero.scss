@@ -83,10 +83,12 @@
 
 .hero .hero__card-time {
   width: 154px;
+  margin: 0;
 }
 
 .hero .hero__card-difficult-rate {
   width: 184px;
+  margin: 0;
 }
 
 .hero__card-button {
@@ -102,18 +104,15 @@
 // Swiper
 
 .hero .hero__swiper {
-  min-width: 320px;
-  max-width: 320px;
+  width: 320px;
   z-index: 0;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
-    max-width: 768px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1440px;
-    max-width: 1440px;
+    width: 1440px;
   }
 }
 

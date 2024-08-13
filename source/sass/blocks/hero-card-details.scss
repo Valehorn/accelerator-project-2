@@ -1,10 +1,11 @@
 @use "../global/variables";
 
 .hero-card-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 12px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   min-height: 44px;
-  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 20px;
+  padding-left: 40px;
 }
