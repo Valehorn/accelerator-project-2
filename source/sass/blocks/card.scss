@@ -79,6 +79,14 @@
   &::before {
     left: 16px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
 }
 
 .card__info-item--days {
@@ -113,8 +121,26 @@
 }
 
 .card__info-item--wrap {
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+
   @media (max-width: $pre-tablet-width) {
     margin-right: calc(100% + 1px);
+  }
+}
+
+.card__info-item--card-three-wrap {
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
   }
 }
 
@@ -127,16 +153,40 @@
 }
 
 .card__info-optional-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  &::before {
+    position: absolute;
+    top: -15px;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .card__info-optional-list--wrap {
   gap: 6px;
+
+  @media (min-width: $tablet-width) {
+    gap: 26px;
+  }
 }
 
 .card__info-optional-item-title {

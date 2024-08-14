@@ -3,6 +3,11 @@
 .tours {
   padding-top: 36px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .tours__title-container {
@@ -15,6 +20,10 @@
 
 .tours__overflow {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 35px;
+  }
 }
 
 .tours__swiper {
