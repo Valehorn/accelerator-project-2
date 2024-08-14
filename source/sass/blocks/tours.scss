@@ -1,5 +1,22 @@
 @use "../global/variables";
 
+.tours {
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+.tours__title-container {
+  position: relative;
+}
+
+.tours__title {
+  margin-bottom: 42px;
+}
+
+.tours__overflow {
+  margin-bottom: 25px;
+}
+
 .tours__swiper {
   width: 290px;
 
@@ -43,6 +60,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $primary-text-color;
+  text-align: center;
 
   &::after {
     position: absolute;
