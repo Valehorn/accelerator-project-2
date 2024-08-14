@@ -1,7 +1,37 @@
 @use "../global/variables";
 
+.tours__swiper {
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.tours__swiper-buttons-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -51px;
+    right: 0;
+    display: flex;
+    gap: 4px;
+    z-index: 1;
+  }
+}
+
+.tours__image-container {
+  position: absolute;
+}
+
 .tours__image {
   display: block;
+  object-fit: cover;
 }
 
 .tours__link {

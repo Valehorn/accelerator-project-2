@@ -1,0 +1,37 @@
+@use "../global/variables";
+
+.swiper__button {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 35px;
+    transition: background-color 0.5s ease;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      width: 14px;
+      height: 9px;
+      transform: translate(-50%, -50%);
+      mask-image: url("/__spritemap#sprite-pointer-view");
+      mask-size: 14px 9px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.swiper__button--prev {
+  @media (min-width: $tablet-width) {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper__buttons--disabled {
+  background-color: #999999;
+  pointer-events: none;
+}

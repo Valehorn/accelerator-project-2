@@ -1,9 +1,11 @@
 import { burgerMenuToggle } from './burger-menu';
-import { heroSwiperInit } from './hero-swiper';
+import { initSwiperHero } from './hero-swiper';
+import { initSwiperTours } from './tours-swiper';
 
 const bootStrap = () => {
   burgerMenuToggle();
-  heroSwiperInit();
+  initSwiperHero();
+  initSwiperTours();
 };
 
 bootStrap();

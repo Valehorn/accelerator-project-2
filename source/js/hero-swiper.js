@@ -4,7 +4,7 @@ import 'swiper/scss';
 
 const heroSwiperContainer = document.querySelector('.hero__swiper');
 
-const heroSwiperInit = () => {
+const initSwiperHero = () => {
   const heroSwiper = new Swiper(heroSwiperContainer, {
     modules: [Pagination],
     speed: 600,
@@ -59,4 +59,4 @@ const heroSwiperInit = () => {
   updateTabIndex(heroSwiper);
 };
 
-export { heroSwiperInit };
+export { initSwiperHero };

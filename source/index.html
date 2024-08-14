@@ -196,174 +196,229 @@
     <div class="tours-training-bg-wrapper">
       <section class="tours container" data-test="tours" id="tours">
         <h2 class="tours__title title">Ближайшие туры</h2>
-        <div class="swiper">
-          <div class="swiper-slide">
-            <article class="tours__card card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-1@1x.webp 1x, img/tours/tours-desktop-1@2x.webp 2x" width="380"
-                  height="416">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/tours/tours-tablet-1@1x.webp 1x, img/tours/tours-tablet-1@2x.webp 2x" width="330"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-1@1x.jpg 1x, img/tours/tours-desktop-1@1x.jpg 2x" width="380"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/tours/tours-tablet-1@1x.jpg 1x, img/tours/tours-tablet-1@2x.jpg 2x" width="330"
-                  height="416">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/tours/tours-mobile-1@1x.webp 1x, img/tours/tours-mobile-1@2x.webp 2x" width="290"
-                  height="416">
-                <img class="tours__image" src="img/tours/tours-mobile-1@1x.jpg" alt="Просторы вокруг Эльбруса"
-                  width="290" height="416">
-              </picture>
-              <div class="card__content">
-                <ul class="card__info-list">
-                  <li class="card__info-item card__info-item--place card__info-item--special">Кавказ</li>
-                  <li class="card__info-item card__info-item--days">4 дня</li>
-                  <li class="card__info-item card__info-item--nights">3 ночи</li>
-                </ul>
-                <h2 class="card__title">Путешествие
-                  вокруг Эльбруса</h2>
-                <dl class="card__info-optional-list">
-                  <dt class="card__info-optional-item">Сложность:</dt>
-                  <dd class="card__info-optional-difficult-rate">
-                    <span class="visually-hidden">4 звезды из 5</span>
-                  </dd>
-                  <dt class="card__info-optional-item">Даты набора:</dt>
-                  <dd class="card__info-optional-description">12.06–19.06</dd>
-                  <dt class="card__info-optional-item">Группа:</dt>
-                  <dd class="card__info-optional-description">До 15 чел.</dd>
-                </dl>
-              </div>
-            </article>
+        <div class="swiper-overflow">
+          <div class="tours__swiper-buttons-container">
+            <button class="button tours__swiper-button-prev swiper__button swiper__button--prev button--primary"
+              type="button">
+              <span class="visually-hidden">Кнопка предыдущего слайда</span>
+            </button>
+            <button class="button tours__swiper-button-next swiper__button swiper__button--next button--primary"
+              type="button">
+              <span class="visually-hidden">Кнопка следующего слайда</span>
+            </button>
           </div>
-          <div class="swiper-slide">
-            <article class="tours__card card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-2@1x.webp 1x, img/tours/tours-desktop-2@2x.webp 2x" width="380"
-                  height="416">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="330"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-2@1x.jgp 1x, img/tours/tours-desktop-2@2x.jgp 2x" width="380"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/tours/tours-tablet-2@1x.jpg 1x, img/tours/tours-tablet-2@2x.jpg 2x" width="330"
-                  height="416">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="290"
-                  height="416">
-                <img class="tours__image" src="img/tours/tours-tablet-2@1x.jpg" alt="Подножия Белухи" width="290"
-                  height="416">
-              </picture>
-              <div class="card__content">
-                <ul class="card__info-list">
-                  <li class="card__info-item card__info-item--place card__info-item--special">Алтай</li>
-                  <li class="card__info-item card__info-item--days">14 дней</li>
-                  <li class="card__info-item card__info-item--nights">13 ночей</li>
-                </ul>
-                <h2 class="card__title">Путь к подножию
-                  Белухи</h2>
-                <dl class="card__info-optional-list">
-                  <dt class="card__info-optional-item">Сложность:</dt>
-                  <dd class="card__info-optional-difficult-rate">
-                    <span class="visually-hidden">3 звезды из 5</span>
-                  </dd>
-                  <dt class="card__info-optional-item">Даты набора:</dt>
-                  <dd class="card__info-optional-description">14.06–23.06</dd>
-                  <dt class="card__info-optional-item">Группа:</dt>
-                  <dd class="card__info-optional-description">до 25 чел.</dd>
-                </dl>
+          <div class="tours__swiper swiper">
+            <div class="tours__swiper-wrapper swiper-wrapper">
+              <div class="tours__swiper-slide swiper-slide">
+                <article class="tours__card card">
+                  <div class="tours__image-container">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-1@1x.webp 1x, img/tours/tours-desktop-1@2x.webp 2x" width="380"
+                        height="416">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/tours/tours-tablet-1@1x.webp 1x, img/tours/tours-tablet-1@2x.webp 2x" width="330"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-1@1x.jpg 1x, img/tours/tours-desktop-1@1x.jpg 2x" width="380"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 768px)"
+                        srcset="img/tours/tours-tablet-1@1x.jpg 1x, img/tours/tours-tablet-1@2x.jpg 2x" width="330"
+                        height="416">
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/tours/tours-mobile-1@1x.webp 1x, img/tours/tours-mobile-1@2x.webp 2x" width="290"
+                        height="416">
+                      <img class="tours__image" src="img/tours/tours-mobile-1@1x.jpg" alt="Просторы вокруг Эльбруса"
+                        width="290" height="416">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <ul class="card__info-list">
+                      <li class="card__info-item card__info-item--place card__info-item--special">Кавказ</li>
+                      <li class="card__info-item card__info-item--days">4 дня</li>
+                      <li class="card__info-item card__info-item--nights">3 ночи</li>
+                    </ul>
+                    <h2 class="card__title">Путешествие
+                      вокруг Эльбруса</h2>
+                    <ul class="card__info-optional-list">
+                      <li class="card__info-optional-item">
+                        <p class="card__info-optional-item-title">Сложность:</p>
+                        <div class="card__info-optional-difficult-rate">
+                          <p class="card__info-stars card__info-stars--able-four"></p>
+                          <p class="card__info-stars card__info-stars--disable-one"></p>
+                          <span class="visually-hidden">4 звезды из 5</span>
+                        </div>
+                      </li>
+                      <li class="card__info-optional-item">
+                        <p class="card__info-optional-item-title">Даты набора:</p>
+                        <p class="card__info-optional-description">12.06–19.06</p>
+                      </li>
+                      <li class="card__info-optional-item">
+                      <p class="card__info-optional-item-title">Группа:</p>
+                      <p class="card__info-optional-description">До 15 чел.</p>
+                    </li>
+                    </ul>
+                  </div>
+                </article>
               </div>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="tours__card card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="380"
-                  height="416">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="330"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="380"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="330"
-                  height="416">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="290"
-                  height="416">
-                <img class="tours__image" src="img/tours/tours-desktop-3@1x.jpg" alt="Горная вершина Фишт" width="290"
-                  height="416">
-              </picture>
-              <div class="card__content">
-                <ul class="card__info-list">
-                  <li class="card__info-item card__info-item--place card__info-item--special">Адыгея</li>
-                  <li class="card__info-item card__info-item--days">7 дней</li>
-                  <li class="card__info-item card__info-item--nights">6 ночей</li>
-                </ul>
-                <h2 class="card__title">Через Фишт
-                  к Чёрному морю и обратно</h2>
-                <dl class="card__info-optional-list">
-                  <dt class="card__info-optional-item">Сложность:</dt>
-                  <dd class="card__info-optional-difficult-rate">
-                    <span class="visually-hidden">4 звезды из 5</span>
-                  </dd>
-                  <dt class="card__info-optional-item">Даты набора:</dt>
-                  <dd class="card__info-optional-description">15.07–19.07</dd>
-                  <dt class="card__info-optional-item">Группа:</dt>
-                  <dd class="card__info-optional-description">До 22 чел.</dd>
-                </dl>
+              <div class="tours__swiper-slide swiper-slide">
+                <article class="tours__card card">
+                  <div class="tours__image-container">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-2@1x.webp 1x, img/tours/tours-desktop-2@2x.webp 2x" width="380"
+                        height="416">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="330"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-2@1x.jgp 1x, img/tours/tours-desktop-2@2x.jgp 2x" width="380"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 768px)"
+                        srcset="img/tours/tours-tablet-2@1x.jpg 1x, img/tours/tours-tablet-2@2x.jpg 2x" width="330"
+                        height="416">
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/tours/tours-tablet-2@1x.webp 1x, img/tours/tours-tablet-2@2x.webp 2x" width="290"
+                        height="416">
+                      <img class="tours__image" src="img/tours/tours-tablet-2@1x.jpg" alt="Подножия Белухи" width="290"
+                        height="416">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <ul class="card__info-list">
+                      <li class="card__info-item card__info-item--place card__info-item--special card__info-item--wrap">
+                        Алтай</li>
+                      <li class="card__info-item card__info-item--days">14 дней</li>
+                      <li class="card__info-item card__info-item--nights">13 ночей</li>
+                    </ul>
+                    <h2 class="card__title">Путь к подножию
+                      Белухи</h2>
+                      <ul class="card__info-optional-list card__info-optional-list--wrap">
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Сложность:</p>
+                          <div class="card__info-optional-difficult-rate">
+                            <p class="card__info-stars card__info-stars--able-four"></p>
+                            <p class="card__info-stars card__info-stars--disable-one"></p>
+                            <span class="visually-hidden">4 звезды из 5</span>
+                          </div>
+                        </li>
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Даты набора:</p>
+                          <p class="card__info-optional-description">14.06–23.06</p>
+                        </li>
+                        <li class="card__info-optional-item">
+                        <p class="card__info-optional-item-title">Группа:</p>
+                        <p class="card__info-optional-description">До 25 чел.</p>
+                      </li>
+                      </ul>
+                  </div>
+                </article>
               </div>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="tours__card card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="380"
-                  height="416">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="330"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="380"
-                  height="416">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="330"
-                  height="416">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="290"
-                  height="416">
-                <img class="tours__image" src="img/tours/tours-desktop-4@1x.jpg" alt="Горная вершина Манарага"
-                  width="290" height="416">
-              </picture>
-              <div class="card__content">
-                <ul class="card__info-list">
-                  <li class="card__info-item card__info-item--place card__info-item--special">Урал</li>
-                  <li class="card__info-item card__info-item--days">9 дней</li>
-                  <li class="card__info-item card__info-item--nights">10 ночей</li>
-                </ul>
-                <h2 class="card__title">Восхождение
-                  Манарага</h2>
-                <dl class="card__info-optional-list">
-                  <dt class="card__info-optional-item">Сложность:</dt>
-                  <dd class="card__info-optional-difficult-rate">
-                    <span class="visually-hidden">5 звезд из 5</span>
-                  </dd>
-                  <dt class="card__info-optional-item">Даты набора:</dt>
-                  <dd class="card__info-optional-description">12.07–19.07</dd>
-                  <dt class="card__info-optional-item">Группа:</dt>
-                  <dd class="card__info-optional-description">До 7 чел.</dd>
-                </dl>
+              <div class="tours__swiper-slide swiper-slide">
+                <article class="tours__card card">
+                  <div class="tours__image-container">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="380"
+                        height="416">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="330"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="380"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 768px)"
+                        srcset="img/tours/tours-desktop-3@1x.jpg 1x, img/tours/tours-desktop-3@2x.jpg 2x" width="330"
+                        height="416">
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="290"
+                        height="416">
+                      <img class="tours__image" src="img/tours/tours-desktop-3@1x.jpg" alt="Горная вершина Фишт"
+                        width="290" height="416">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <ul class="card__info-list">
+                      <li class="card__info-item card__info-item--place card__info-item--special card__info-item--wrap">
+                        Адыгея</li>
+                      <li class="card__info-item card__info-item--days">7 дней</li>
+                      <li class="card__info-item card__info-item--nights">6 ночей</li>
+                    </ul>
+                    <h2 class="card__title">Через Фишт
+                      к Чёрному морю и обратно</h2>
+                      <ul class="card__info-optional-list card__info-optional-list--wrap">
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Сложность:</p>
+                          <div class="card__info-optional-difficult-rate">
+                            <p class="card__info-stars card__info-stars--able-four"></p>
+                            <p class="card__info-stars card__info-stars--disable-one"></p>
+                            <span class="visually-hidden">4 звезды из 5</span>
+                          </div>
+                        </li>
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Даты набора:</p>
+                          <p class="card__info-optional-description">15.07–19.07</p>
+                        </li>
+                        <li class="card__info-optional-item">
+                        <p class="card__info-optional-item-title">Группа:</p>
+                        <p class="card__info-optional-description">До 22 чел.</p>
+                      </li>
+                      </ul>
+                  </div>
+                </article>
               </div>
-            </article>
+              <div class="tours__swiper-slide swiper-slide">
+                <article class="tours__card card">
+                  <div class="tours__image-container">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="380"
+                        height="416">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="330"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 1440px)"
+                        srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="380"
+                        height="416">
+                      <source type="image/jpeg" media="(min-width: 768px)"
+                        srcset="img/tours/tours-desktop-4@1x.jpg 1x, img/tours/tours-desktop-4@2x.jpg 2x" width="330"
+                        height="416">
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="290"
+                        height="416">
+                      <img class="tours__image" src="img/tours/tours-desktop-4@1x.jpg" alt="Горная вершина Манарага"
+                        width="290" height="416">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <ul class="card__info-list">
+                      <li class="card__info-item card__info-item--place card__info-item--special">Урал</li>
+                      <li class="card__info-item card__info-item--days">9 дней</li>
+                      <li class="card__info-item card__info-item--nights">10 ночей</li>
+                    </ul>
+                    <h2 class="card__title">Восхождение
+                      Манарага</h2>
+                      <ul class="card__info-optional-list">
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Сложность:</p>
+                          <div class="card__info-optional-difficult-rate">
+                            <p class="card__info-stars card__info-stars--able-five"></p>
+                            <span class="visually-hidden">4 звезды из 5</span>
+                          </div>
+                        </li>
+                        <li class="card__info-optional-item">
+                          <p class="card__info-optional-item-title">Даты набора:</p>
+                          <p class="card__info-optional-description">12.07–19.07</p>
+                        </li>
+                        <li class="card__info-optional-item">
+                        <p class="card__info-optional-item-title">Группа:</p>
+                        <p class="card__info-optional-description">До 7 чел.</p>
+                      </li>
+                      </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
         <a class="tours__link" href="#">Показать все туры</a>
@@ -944,6 +999,7 @@
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
           <label class="visually-hidden" for="email">Email</label>
           <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+          <button class="button form__button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
