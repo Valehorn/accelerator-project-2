@@ -194,8 +194,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
-    justify-content: space-between;
+    gap: 53px;
   }
 }
 
@@ -204,6 +203,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 52px;
   }
 }
 
