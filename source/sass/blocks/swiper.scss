@@ -10,7 +10,7 @@
 
     &::after {
       position: absolute;
-      top: 50%;
+      top: calc(50% - 1px);
       left: 50%;
       content: "";
       width: 14px;
@@ -28,6 +28,7 @@
 .swiper__button--prev {
   @media (min-width: $tablet-width) {
     transform: rotate(180deg);
+    top: calc(50% + 1px);
   }
 }
 

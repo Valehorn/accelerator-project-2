@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     background-image: none;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 106px;
   }
 }
 
@@ -25,6 +25,10 @@
 
 .tours__title {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .tours__title-decoration {
@@ -36,7 +40,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin: 35px;
+    margin-bottom: 35px;
   }
 }
 
@@ -57,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -51px;
+    top: -60px;
     right: 0;
     display: flex;
     gap: 4px;
@@ -102,5 +106,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+
+    &::after {
+      right: calc(34% - 3px);
+      top: 1px;
+    }
   }
 }
