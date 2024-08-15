@@ -1,10 +1,19 @@
 @use "../global/variables";
 
 .tours {
-  padding-top: 36px;
+  background-image:
+    image-set(url("../../img/background/clouds-bg-mobile-1@1x.webp") type("image/webp") 1x,
+    url("../../img/background/clouds-bg-mobile-1@2x.webp") type("image/webp") 2x,
+    url("../../img/background/clouds-bg-mobile-1@1x.png") type("image/png") 1x,
+    url("../../img/background/clouds-bg-mobile-1@2x.png") type("image/png") 2x);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 178px 9px;
+  padding-top: 39px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    background-image: none;
     padding-top: 60px;
     padding-bottom: 40px;
   }
@@ -15,7 +24,7 @@
 }
 
 .tours__title {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 
 .tours__title-decoration {
