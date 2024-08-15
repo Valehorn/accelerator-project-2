@@ -6,7 +6,7 @@ const toursSwiperContainer = document.querySelector('.tours__swiper');
 
 const initSwiperTours = () => {
   const breakpoint = window.innerWidth;
-  const reviewsSwiper = new Swiper(toursSwiperContainer, {
+  const toursSwiper = new Swiper(toursSwiperContainer, {
     modules: [Navigation],
     speed: 900,
     spaceBetween: 20,
@@ -45,24 +45,24 @@ const initSwiperTours = () => {
     const prevButton = document.querySelector('.tours__swiper-button-prev');
     const nextButton = document.querySelector('.tours__swiper-button-next');
 
-    if (reviewsSwiper.isBeginning) {
+    if (toursSwiper.isBeginning) {
       prevButton.classList.add('swiper__buttons--disabled');
       prevButton.disabled = true;
-      reviewsSwiper.allowSlidePrev = false;
+      toursSwiper.allowSlidePrev = false;
     } else {
       prevButton.classList.remove('swiper__buttons--disabled');
       prevButton.disabled = false;
-      reviewsSwiper.allowSlidePrev = true;
+      toursSwiper.allowSlidePrev = true;
     }
 
-    if (reviewsSwiper.isEnd) {
+    if (toursSwiper.isEnd) {
       nextButton.classList.add('swiper__buttons--disabled');
       nextButton.disabled = true;
-      reviewsSwiper.allowSlideNext = false;
+      toursSwiper.allowSlideNext = false;
     } else {
       nextButton.classList.remove('swiper__buttons--disabled');
       nextButton.disabled = false;
-      reviewsSwiper.allowSlideNext = true;
+      toursSwiper.allowSlideNext = true;
     }
   }
   updateToursButtons();

@@ -1,4 +1,4 @@
-import { Swiper } from 'swiper/bundle';
+/* import { Swiper } from 'swiper/bundle';
 import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
@@ -6,7 +6,9 @@ const trainingSwiperContainer = document.querySelector('.training__swiper');
 
 const initSwiperTraining = () => {
   const breakpoint = window.innerWidth;
-  const reviewsSwiper = new Swiper(trainingSwiperContainer, {
+
+  // Инициализация Swiper
+  const trainingSwiper = new Swiper(trainingSwiperContainer, {
     modules: [Navigation],
     speed: 900,
     spaceBetween: 20,
@@ -29,43 +31,52 @@ const initSwiperTraining = () => {
     },
     allowTouchMove: breakpoint < 1439,
     on: {
-      slideChange: () => {
-        updateTrainingButtons();
+      init(swiper) {
+        // Логика выполняется после полной инициализации Swiper
+        if (breakpoint < 768) {
+          swiper.slideTo(2, 0);
+        }
+        updateTrainingButtons(swiper);
       },
-      reachEnd: () => {
-        updateTrainingButtons();
+      slideChange(swiper) {
+        updateTrainingButtons(swiper);
       },
-      reachBeginning: () => {
-        updateTrainingButtons();
-      }
+      reachEnd(swiper) {
+        updateTrainingButtons(swiper);
+      },
+      reachBeginning(swiper) {
+        updateTrainingButtons(swiper);
+      },
     }
   });
 
-  function updateTrainingButtons() {
+  // Функция для обновления состояния кнопок
+  function updateTrainingButtons(swiperInstance) {
     const prevButton = document.querySelector('.training__swiper-button-prev');
     const nextButton = document.querySelector('.training__swiper-button-next');
 
-    if (reviewsSwiper.isBeginning) {
+    if (!swiperInstance || !prevButton || !nextButton) return;
+
+    if (swiperInstance.isBeginning) {
       prevButton.classList.add('swiper__buttons--disabled');
       prevButton.disabled = true;
-      reviewsSwiper.allowSlidePrev = false;
+      swiperInstance.allowSlidePrev = false;
     } else {
       prevButton.classList.remove('swiper__buttons--disabled');
       prevButton.disabled = false;
-      reviewsSwiper.allowSlidePrev = true;
+      swiperInstance.allowSlidePrev = true;
     }
 
-    if (reviewsSwiper.isEnd) {
+    if (swiperInstance.isEnd) {
       nextButton.classList.add('swiper__buttons--disabled');
       nextButton.disabled = true;
-      reviewsSwiper.allowSlideNext = false;
+      swiperInstance.allowSlideNext = false;
     } else {
       nextButton.classList.remove('swiper__buttons--disabled');
       nextButton.disabled = false;
-      reviewsSwiper.allowSlideNext = true;
+      swiperInstance.allowSlideNext = true;
     }
   }
-  updateTrainingButtons();
 };
 
-export { initSwiperTraining };
+export { initSwiperTraining }; */
