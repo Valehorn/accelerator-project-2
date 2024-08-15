@@ -1,6 +1,8 @@
 @use "../global/variables";
 
 .swiper__button {
+  display: none;
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: inline-block;

@@ -2,11 +2,11 @@ import { Swiper } from 'swiper/bundle';
 import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
-const toursSwiperContainer = document.querySelector('.tours__swiper');
+const trainingSwiperContainer = document.querySelector('.training__swiper');
 
-const initSwiperTours = () => {
+const initSwiperTraining = () => {
   const breakpoint = window.innerWidth;
-  const reviewsSwiper = new Swiper(toursSwiperContainer, {
+  const reviewsSwiper = new Swiper(trainingSwiperContainer, {
     modules: [Navigation],
     speed: 900,
     spaceBetween: 20,
@@ -14,36 +14,36 @@ const initSwiperTours = () => {
     loop: false,
     lockClass: '.swiper__button--disabled',
     navigation: {
-      nextEl: '.tours__swiper-button-next',
-      prevEl: '.tours__swiper-button-prev',
+      nextEl: '.training__swiper-button-next',
+      prevEl: '.training__swiper-button-prev',
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       1440: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 4,
+        spaceBetween: 20,
       }
     },
     allowTouchMove: breakpoint < 1439,
     on: {
       slideChange: () => {
-        updateToursButtons();
+        updateTrainingButtons();
       },
       reachEnd: () => {
-        updateToursButtons();
+        updateTrainingButtons();
       },
       reachBeginning: () => {
-        updateToursButtons();
+        updateTrainingButtons();
       }
     }
   });
 
-  function updateToursButtons() {
-    const prevButton = document.querySelector('.tours__swiper-button-prev');
-    const nextButton = document.querySelector('.tours__swiper-button-next');
+  function updateTrainingButtons() {
+    const prevButton = document.querySelector('.training__swiper-button-prev');
+    const nextButton = document.querySelector('.training__swiper-button-next');
 
     if (reviewsSwiper.isBeginning) {
       prevButton.classList.add('swiper__buttons--disabled');
@@ -65,7 +65,7 @@ const initSwiperTours = () => {
       reviewsSwiper.allowSlideNext = true;
     }
   }
-  updateToursButtons();
+  updateTrainingButtons();
 };
 
-export { initSwiperTours };
+export { initSwiperTraining };

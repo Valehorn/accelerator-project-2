@@ -8,7 +8,7 @@
     url("../../img/background/clouds-bg-mobile-1@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 178px 9px;
+  background-position: right 9px;
   padding-top: 39px;
   padding-bottom: 30px;
 
@@ -19,7 +19,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: none;
     padding-top: 123px;
     padding-bottom: 109px;
   }
