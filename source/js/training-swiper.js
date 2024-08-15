@@ -1,4 +1,4 @@
-/* import { Swiper } from 'swiper/bundle';
+import { Swiper } from 'swiper/bundle';
 import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
@@ -79,4 +79,4 @@ const initSwiperTraining = () => {
   }
 };
 
-export { initSwiperTraining }; */
+export { initSwiperTraining };
