@@ -8,7 +8,7 @@
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   p:not([class]) br {
@@ -59,12 +59,12 @@
 }
 
 .training__title-decoration {
-  top: -15px;
+  top: -17px;
   left: 0;
 }
 
 .training__instructors {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
@@ -108,7 +108,7 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
   min-height: 356px;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 15px 14px;
 
   p:first-of-type {
     font-size: 12px;
