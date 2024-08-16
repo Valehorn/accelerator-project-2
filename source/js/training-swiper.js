@@ -1,80 +1,68 @@
 import { Swiper } from 'swiper/bundle';
-import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
 const trainingSwiperContainer = document.querySelector('.training__swiper');
 
 const initSwiperTraining = () => {
-  const breakpoint = window.innerWidth;
-
-  // Инициализация Swiper
-  const trainingSwiper = new Swiper(trainingSwiperContainer, {
-    modules: [Navigation],
-    speed: 900,
-    spaceBetween: 20,
-    slidesPerView: 1,
-    loop: false,
-    lockClass: '.swiper__button--disabled',
+  const swiperTraining = new Swiper(trainingSwiperContainer, {
     navigation: {
       nextEl: '.training__swiper-button-next',
       prevEl: '.training__swiper-button-prev',
     },
+    speed: 900,
+    loop: false,
+    slidesPerView: 1,
+    allowTouchMove: true,
+
     breakpoints: {
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+      320: {
+        slidesPerView: 1,
+        initialSlide: 2,
+        spaceBetween: 15,
       },
+
+      768: {
+        slidesPerView: 2,
+        initialSlide: 0,
+        spaceBetween: 18,
+      },
+
       1440: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 3,
+        initialSlide: 0,
+        spaceBetween: 30,
+        allowTouchMove: false
       }
     },
-    allowTouchMove: breakpoint < 1439,
     on: {
-      init(swiper) {
-        // Логика выполняется после полной инициализации Swiper
-        if (breakpoint < 768) {
-          swiper.slideTo(2, 0);
-        }
-        updateTrainingButtons(swiper);
+      slideChange() {
+        updateNavigationButtons(swiperTraining);
       },
-      slideChange(swiper) {
-        updateTrainingButtons(swiper);
-      },
-      reachEnd(swiper) {
-        updateTrainingButtons(swiper);
-      },
-      reachBeginning(swiper) {
-        updateTrainingButtons(swiper);
-      },
+      slideNextTransitionStart() {
+        updateNavigationButtons(swiperTraining);
+      }
     }
   });
+  updateNavigationButtons(swiperTraining);
 
-  // Функция для обновления состояния кнопок
-  function updateTrainingButtons(swiperInstance) {
+  function updateNavigationButtons(swiper) {
     const prevButton = document.querySelector('.training__swiper-button-prev');
     const nextButton = document.querySelector('.training__swiper-button-next');
 
-    if (!swiperInstance || !prevButton || !nextButton) return;
-
-    if (swiperInstance.isBeginning) {
-      prevButton.classList.add('swiper__buttons--disabled');
+    if (swiper.isBeginning) {
+      prevButton.classList.add('swiper__button--disabled');
       prevButton.disabled = true;
-      swiperInstance.allowSlidePrev = false;
     } else {
-      prevButton.classList.remove('swiper__buttons--disabled');
+      prevButton.classList.remove('swiper__button--disabled');
       prevButton.disabled = false;
-      swiperInstance.allowSlidePrev = true;
     }
 
-    if (swiperInstance.isEnd) {
-      nextButton.classList.add('swiper__buttons--disabled');
+    if (swiper.isEnd) {
+      nextButton.classList.add('swiper__button--disabled');
       nextButton.disabled = true;
-      swiperInstance.allowSlideNext = false;
     } else {
-      nextButton.classList.remove('swiper__buttons--disabled');
+      nextButton.classList.remove('swiper__button--disabled');
       nextButton.disabled = false;
-      swiperInstance.allowSlideNext = true;
     }
   }
 };

@@ -4,7 +4,7 @@ import 'swiper/scss';
 const toursSwiperContainer = document.querySelector('.tours__swiper');
 
 const initSwiperTours = () => {
-  const swiperInstance = new Swiper(toursSwiperContainer, {
+  const swiperTours = new Swiper(toursSwiperContainer, {
     navigation: {
       nextEl: '.tours__swiper-button-next',
       prevEl: '.tours__swiper-button-prev',
@@ -33,14 +33,14 @@ const initSwiperTours = () => {
     },
     on: {
       slideChange() {
-        updateNavigationButtons(swiperInstance);
+        updateNavigationButtons(swiperTours);
       },
       slideNextTransitionStart() {
-        updateNavigationButtons(swiperInstance);
+        updateNavigationButtons(swiperTours);
       }
     }
   });
-  updateNavigationButtons(swiperInstance);
+  updateNavigationButtons(swiperTours);
 
   function updateNavigationButtons(swiper) {
     const prevButton = document.querySelector('.tours__swiper-button-prev');
