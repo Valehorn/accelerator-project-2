@@ -2,6 +2,7 @@
 
 .header {
   --bg-opacity: 0;
+  --bg-height: 0;
 
   position: relative;
   background-color: $primary-color;
@@ -26,7 +27,7 @@
       position: absolute;
       content: "";
       width: 100%;
-      height: 267%;
+      height: 274%;
       background-color: $primary-color;
       opacity: var(--bg-opacity);
       pointer-events: none;
@@ -36,7 +37,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     &::after {
-      height: 428%;
+      height: 442%;
     }
   }
 }
@@ -142,18 +143,19 @@
   @media (max-width: $pre-desktop-width) {
     visibility: hidden;
     opacity: 0;
-    width: 320px;
     top: 83px;
     left: -16px;
-    display: flex;
     flex-direction: column;
     gap: 22px;
+    text-transform: uppercase;
+    width: 320px;
+    display: flex;
     padding-bottom: 50px;
     padding-left: 15px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
-    top: 65px;
+    top: 62px;
     left: -45px;
     gap: 26px;
     width: 768px;

@@ -1,10 +1,14 @@
 @use "../global/variables";
 
 .training {
-  p {
+  padding-top: 36px;
+  padding-bottom: 20px;
+
+  p:not([class]) {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,8 +20,10 @@
     background-repeat: no-repeat;
     background-size: 840px 280px;
     background-position: right center;
+    padding-top: 60px;
+    padding-bottom: 40px;
 
-    p {
+    p:not([class]) {
       font-size: 16px;
       line-height: 24px;
     }
@@ -33,8 +39,31 @@
   }
 }
 
+.training__title-container {
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.training__title-decoration {
+  top: -15px;
+  left: 0;
+}
+
+.training__instructors {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .training__swiper {
   width: 290px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: 678px;
@@ -46,14 +75,25 @@
 }
 
 .training__card {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  min-height: 356px;
+  background-color: #ffffff;
+  padding: 15px;
+
   p:first-of-type {
     font-size: 12px;
     line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
   }
 }
 
 .training__image-container {
   width: 260px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: 182.67px;
@@ -70,10 +110,22 @@
 }
 
 .training__description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   p:first-of-type {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+    width: 170px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    p:first-of-type {
+      width: 150px;
+    }
   }
 }
 
@@ -83,6 +135,7 @@
   width: 24px;
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  align-self: flex-start;
 
   &::after {
     position: absolute;
