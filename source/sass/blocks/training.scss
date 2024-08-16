@@ -11,6 +11,10 @@
     margin-bottom: 25px;
   }
 
+  p:not([class]) br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     background-image:
       image-set(url("../../img/training/training-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
@@ -20,12 +24,13 @@
     background-repeat: no-repeat;
     background-size: 840px 280px;
     background-position: right center;
-    padding-top: 60px;
+    padding-top: 5px;
     padding-bottom: 40px;
 
     p:not([class]) {
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 29px;
     }
   }
 
@@ -36,6 +41,16 @@
       url("../../img/training/training-bg-clouds-desktop@1x.png") type("image/png") 1x,
       url("../../img/training/training-bg-clouds-desktop@2x.png") type("image/png") 2x);
     background-position: right bottom;
+    padding-top: 62px;
+
+    p:not([class]) {
+      width: 820px;
+      margin-bottom: 62px;
+    }
+
+    p:not([class]) br {
+      display: none;
+    }
   }
 }
 
@@ -44,7 +59,11 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -57,7 +76,25 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.training__swiper-buttons-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -65px;
+    right: 0;
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -55px;
   }
 }
 
@@ -71,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    margin-bottom: 56px;
   }
 }
 
@@ -88,6 +126,14 @@
 
   @media (min-width: $tablet-width) {
     min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+
+    p:first-of-type {
+      width: auto;
+    }
   }
 }
 
@@ -127,6 +173,12 @@
       width: 150px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    p:first-of-type {
+      width: 140px;
+    }
+  }
 }
 
 .training__vk-link {
@@ -158,12 +210,28 @@
   line-height: 16px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .training__process-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   list-style: none;
   padding: 0;
+  padding-left: 61px;
   margin: 0;
+
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    content: "";
+    width: 2px;
+    height: 89%;
+    background-color: $primary-color;
+  }
 }
 
 .training__process-item {
@@ -172,11 +240,22 @@
 
   position: relative;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: -61px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: $primary-color;
+  }
+
   &::after {
     position: absolute;
     content: "";
     top: 0;
-    left: -29px;
+    left: -32px;
     width: 25px;
     height: 25px;
     mask-image: var(--process-image);
