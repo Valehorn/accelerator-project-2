@@ -32,6 +32,10 @@
       line-height: 24px;
       margin-bottom: 29px;
     }
+
+    p:not([class]) br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +108,7 @@
 
   @media (min-width: $tablet-width) {
     width: 678px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -211,6 +216,12 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 100px;
+  }
 }
 
 .training__process-list {
@@ -231,6 +242,17 @@
     width: 2px;
     height: 89%;
     background-color: $primary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 105px 45px;
+    padding-left: 35px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -264,6 +286,12 @@
     mask-position: center;
     background-color: $primary-text-color;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 
@@ -280,11 +308,35 @@
 .training__process-item--ecology {
   --process-image: url("/__spritemap#sprite-trees-view");
   --process-size: 24.43px 25px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    padding-left: 20px;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      top: 1px;
+      left: -14px;
+    }
+  }
 }
 
 .training__process-item--obstacles {
   --process-image: url("/__spritemap#sprite-mountains-view");
   --process-size: 25px 24.7px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 }
 
 .training__process-description {
