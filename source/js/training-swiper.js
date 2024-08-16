@@ -17,19 +17,16 @@ const initSwiperTraining = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        initialSlide: 2,
         spaceBetween: 15,
       },
 
       768: {
         slidesPerView: 2,
-        initialSlide: 0,
         spaceBetween: 18,
       },
 
       1440: {
         slidesPerView: 3,
-        initialSlide: 0,
         spaceBetween: 30,
         allowTouchMove: false
       }
@@ -43,6 +40,13 @@ const initSwiperTraining = () => {
       }
     }
   });
+
+  if (window.innerWidth < 768) {
+    swiperTraining.slideTo(2, 0, false);
+  } else {
+    swiperTraining.slideTo(0, 0, false);
+  }
+
   updateNavigationButtons(swiperTraining);
 
   function updateNavigationButtons(swiper) {
