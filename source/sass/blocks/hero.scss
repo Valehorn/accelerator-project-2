@@ -13,6 +13,7 @@
   text-align: center;
   min-height: 568px;
   padding-top: 145px;
+  padding-bottom: 69px;
 
   h2 {
     font-size: 26px;
@@ -32,6 +33,7 @@
   @media (min-width: $tablet-width) {
     min-height: 1034px;
     padding-top: 340px;
+    padding-bottom: 76px;
 
     h2 {
       font-size: 56px;
