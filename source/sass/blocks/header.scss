@@ -105,7 +105,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    transform: translate(-7px, 0);
+    height: 37px;
+    transform: translate(-7px, 2px);
+
+    &::after {
+      height: 20.91px;
+      mask-size: 27px 20.91px;
+    }
   }
 
   @media (min-width: $desktop-width) {
