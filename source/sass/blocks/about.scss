@@ -2,15 +2,6 @@
 
 .about {
   position: relative;
-
-  /* background-image:
-    image-set(url("../../img/about/about-bg-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/about/about-bg-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/about/about-bg-mobile@1x.png") type("image/png") 1x,
-    url("../../img/about/about-bg-mobile@2x.png") type("image/png") 2x);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center 20px; */
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -18,14 +9,6 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-width: 768px;
-
-    /* background-image:
-      image-set(url("../../img/about/about-bg-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/about/about-bg-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/about/about-bg-tablet@1x.png") type("image/png") 1x,
-      url("../../img/about/about-bg-tablet@2x.png") type("image/png") 2x);
-    background-size: auto;
-    background-position: left 134px; */
     padding-top: 60px;
   }
 
@@ -34,13 +17,6 @@
     max-width: 1440px;
     padding-top: 155px;
     padding-bottom: 178px;
-
-    /* background-image:
-      image-set(url("../../img/about/about-bg-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/about/about-bg-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/about/about-bg-desktop@1x.png") type("image/png") 1x,
-      url("../../img/about/about-bg-desktop@2x.png") type("image/png") 2x);
-    background-size: 660px 498px; */
   }
 
   h2 {
@@ -53,8 +29,8 @@
 
   p:has(span) {
     position: absolute;
-    top: -10px;
-    left: 7px;
+    top: -15px;
+    left: 0;
     font-size: 26px;
     line-height: 26px;
     font-weight: 800;
@@ -78,7 +54,7 @@
     line-height: 16px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   p {
@@ -87,8 +63,8 @@
     margin: 0;
   }
 
-  div:nth-of-type(2) p {
-    margin-bottom: 25px;
+  .container div:nth-of-type(2) p {
+    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -131,8 +107,11 @@
 }
 
 .about__image-container {
+  margin-bottom: 12px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 172px;
+    margin: 0;
   }
 }
