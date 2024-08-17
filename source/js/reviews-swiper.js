@@ -13,21 +13,22 @@ const initSwiperReviews = () => {
     loop: false,
     slidesPerView: 1,
     allowTouchMove: true,
+    autoHeight: true,
 
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 15,
+        spaceBetween: 10,
       },
 
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 1.5,
+        spaceBetween: 30,
       },
 
       1440: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1.5,
+        spaceBetween: 120,
         allowTouchMove: false
       }
     },
