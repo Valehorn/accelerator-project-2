@@ -3,6 +3,7 @@
 .about {
   position: relative;
   margin: 0 auto;
+  max-width: 320px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -40,10 +41,6 @@
     margin: 0;
   }
 
-  .container div:nth-of-type(2) p {
-    margin-bottom: 26px;
-  }
-
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-width: 768px;
@@ -69,10 +66,6 @@
       font-size: 16px;
       line-height: 24px;
     }
-
-    .container p {
-      width: 270px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -84,9 +77,11 @@
     h2 {
       font-size: 35px;
       line-height: 35px;
+      margin-bottom: 59px;
     }
 
     p:has(span) {
+      top: -39px;
       font-size: 55px;
       line-height: 55px;
     }
@@ -94,11 +89,44 @@
     h3 {
       font-size: 21px;
       line-height: 21px;
+      margin-bottom: 16px;
     }
 
     p {
       font-size: 14px;
       line-height: 22px;
+    }
+  }
+}
+
+.about__text-content {
+  div:nth-of-type(2) p {
+    margin-bottom: 26px;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    div:nth-of-type(2) p,
+    div:nth-of-type(3) p {
+      width: 270px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    div:nth-of-type(2) p {
+      margin-bottom: 29px;
+    }
+
+    div:nth-of-type(2) p,
+    div:nth-of-type(3) p {
+      width: auto;
+    }
+
+    br {
+      display: block;
     }
   }
 }
@@ -115,4 +143,12 @@
     top: 213px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 110px;
+  }
 }
+
+/* .about__image {
+  display: block;
+} */
