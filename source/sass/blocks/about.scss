@@ -6,19 +6,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    min-width: 768px;
-    max-width: 768px;
-    padding-top: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1440px;
-    max-width: 1440px;
-    padding-top: 155px;
-    padding-bottom: 178px;
-  }
-
   h2 {
     font-size: 22px;
     line-height: 22px;
@@ -37,16 +24,6 @@
     color: $primary-text-color;
     opacity: 0.03;
     margin: 0;
-
-    @media (min-width: $tablet-width) {
-      font-size: 40px;
-      line-height: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 55px;
-      line-height: 55px;
-    }
   }
 
   h3 {
@@ -68,9 +45,19 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-width: 768px;
+    max-width: 768px;
+    padding-top: 60px;
+
     h2 {
       font-size: 25px;
       line-height: 25px;
+      margin-bottom: 49px;
+    }
+
+    p:has(span) {
+      font-size: 40px;
+      line-height: 40px;
     }
 
     h3 {
@@ -82,12 +69,26 @@
       font-size: 16px;
       line-height: 24px;
     }
+
+    .container p {
+      width: 270px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    max-width: 1440px;
+    padding-top: 155px;
+    padding-bottom: 178px;
+
     h2 {
       font-size: 35px;
       line-height: 35px;
+    }
+
+    p:has(span) {
+      font-size: 55px;
+      line-height: 55px;
     }
 
     h3 {
@@ -111,7 +112,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 172px;
+    top: 213px;
     margin: 0;
   }
 }
