@@ -2,6 +2,7 @@
 
 .about {
   position: relative;
+
   /* background-image:
     image-set(url("../../img/about/about-bg-mobile@1x.webp") type("image/webp") 1x,
     url("../../img/about/about-bg-mobile@2x.webp") type("image/webp") 2x,
@@ -31,6 +32,9 @@
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     max-width: 1440px;
+    padding-top: 155px;
+    padding-bottom: 178px;
+
     /* background-image:
       image-set(url("../../img/about/about-bg-desktop@1x.webp") type("image/webp") 1x,
       url("../../img/about/about-bg-desktop@2x.webp") type("image/webp") 2x,
