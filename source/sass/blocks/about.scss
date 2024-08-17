@@ -136,7 +136,7 @@
 }
 
 .about__image-container {
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -149,6 +149,6 @@
   }
 }
 
-/* .about__image {
+.about__image {
   display: block;
-} */
+}
