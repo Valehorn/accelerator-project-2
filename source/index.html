@@ -636,26 +636,49 @@
             </div>
           </div>
           <h3 class="training__process-title">Процесс обучения</h3>
-            <ol class="training__process-list">
-              <li class="training__process-item training__process-item--spot">
-                <p class="training__process-description">Изучение спортивного <br>туристского движения</p>
-              </li>
-              <li class="training__process-item training__process-item--equipment">
-                <p class="training__process-description">Подготовка <br>и техническое <br>снаряжение в походах</p>
-              </li>
-              <li class="training__process-item training__process-item--ecology">
-                <p class="training__process-description">Лекции <br>по окружающей<br> среде, экологии и гигиене</p>
-              </li>
-              <li class="training__process-item training__process-item--obstacles">
-                <p class="training__process-description">Разъяснение <br>сложности <br>горных <br>препятствий</p>
-              </li>
-            </ol>
+          <ol class="training__process-list">
+            <li class="training__process-item training__process-item--spot">
+              <p class="training__process-description">Изучение спортивного <br>туристского движения</p>
+            </li>
+            <li class="training__process-item training__process-item--equipment">
+              <p class="training__process-description">Подготовка <br>и техническое <br>снаряжение в походах</p>
+            </li>
+            <li class="training__process-item training__process-item--ecology">
+              <p class="training__process-description">Лекции <br>по окружающей<br> среде, экологии и гигиене</p>
+            </li>
+            <li class="training__process-item training__process-item--obstacles">
+              <p class="training__process-description">Разъяснение <br>сложности <br>горных <br>препятствий</p>
+            </li>
+          </ol>
         </section>
       </div>
     </div>
     <section class="about" data-test="about" id="about">
-      <div class="container">
-        <h2>О нас</h2>
+      <div class="about__image-container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/about/about-bg-desktop@1x.webp 1x, img/about/about-bg-desktop@2x.webp 2x" width="660"
+            height="498">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/about/about-bg-tablet@1x.webp 1x, img/about/about-bg-tablet@2x.webp 2x" width="450"
+            height="312">
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="img/about/about-bg-desktop@1x.png 1x, img/about/about-bg-desktop@@2x.png 2x" width="660"
+            height="498">
+          <source type="image/jpeg" media="(min-width: 768px)"
+            srcset="img/about/about-bg-tablet@1x.jpg 1x, img/about/about-bg-tablet@2x.jpg 2x" width="450"
+            height="312">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/about/about-bg-mobile@1x.webp 1x, img/about/about-bg-mobile@2x.webp 2x" width="320"
+            height="400">
+          <img class="about__image" src="img/about/about-bg-mobile@1x.png" alt="Группа Lifetour на экспедиции." width="320" height="400">
+        </picture>
+      </div>
+      <div class="container container--about-tablet-plus">
+        <div class="about__title-container">
+          <h2>О нас</h2>
+          <p aria-hidden="true"><span>О нас</span></p>
+        </div>
         <div>
           <h3>История компании</h3>
           <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько

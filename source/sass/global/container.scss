@@ -26,3 +26,17 @@
     padding-right: 125px;
   }
 }
+
+.container--about-tablet-plus {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 450px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 585px;
+    max-width: 585px;
+  }
+}
