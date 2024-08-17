@@ -22,7 +22,7 @@ const initSwiperReviews = () => {
       },
 
       768: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.267,
         spaceBetween: 30,
       },
 
