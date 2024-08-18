@@ -1,6 +1,10 @@
 @use "../global/variables";
 
 .adv {
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     background-image:
       image-set(url("../../img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
@@ -13,6 +17,16 @@
   }
 }
 
+.adv__title-container {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.adv__title-decoration {
+  top: 23px;
+  left: 51px;
+}
+
 .adv__swiper-buttons-container {
   display: none;
 
@@ -22,15 +36,26 @@
 }
 
 .adv__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-repeat: no-repeat;
   background-size: 42px 42px;
-  background-position: center top;
+  background-position: center 20px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding-top: 82px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   h3 {
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
     margin: 0;
+    margin-bottom: 15px;
   }
 
   p {
@@ -70,6 +95,7 @@
 }
 
 .adv__card--equipment {
+  padding-left: 9px;
   background-image: url("/__spritemap#sprite-equipment-view");
 }
 
@@ -79,6 +105,10 @@
 
 .adv__card--ecology {
   background-image: url("/__spritemap#sprite-ecology-view");
+
+  span {
+    margin-left: -4px;
+  }
 }
 
 // Swiper
@@ -97,6 +127,14 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+}
+
+.adv__swiper-slide {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 

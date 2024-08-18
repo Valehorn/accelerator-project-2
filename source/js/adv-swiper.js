@@ -13,7 +13,7 @@ const initAdvSwiper = () => {
         slidesPerView: 1,
         slidesPerGroup: 2,
         spaceBetween: 10,
-        speed: 900,
+        speed: 1900,
         loop: true,
         navigation: {
           nextEl: '.adv__swiper-button-next',

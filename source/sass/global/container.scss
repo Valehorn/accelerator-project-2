@@ -52,3 +52,9 @@
     padding-left: 130px;
   }
 }
+
+.container--adv-desktop {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
