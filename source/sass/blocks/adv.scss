@@ -3,7 +3,7 @@
 .adv {
   position: relative;
   padding-top: 37px;
-  padding-bottom: 20px;
+  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     background-image:
@@ -97,6 +97,10 @@
 .adv__card--equipment {
   padding-left: 9px;
   background-image: url("/__spritemap#sprite-equipment-view");
+
+  div {
+    transform: translateX(1px);
+  }
 }
 
 .adv__card--routes {
