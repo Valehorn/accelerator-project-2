@@ -3,6 +3,7 @@ import { initSwiperHero } from './hero-swiper';
 import { initSwiperTours } from './tours-swiper';
 import { initSwiperTraining } from './training-swiper';
 import { initSwiperReviews } from './reviews-swiper';
+import { initAdvSwiper } from './adv-swiper';
 
 const bootStrap = () => {
   burgerMenuToggle();
@@ -10,6 +11,7 @@ const bootStrap = () => {
   initSwiperTours();
   initSwiperTraining();
   initSwiperReviews();
+  initAdvSwiper();
 };
 
 bootStrap();

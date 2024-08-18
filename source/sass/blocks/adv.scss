@@ -13,6 +13,14 @@
   }
 }
 
+.adv__swiper-buttons-container {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .adv__card {
   background-repeat: no-repeat;
   background-size: 42px 42px;
@@ -71,5 +79,24 @@
 
 .adv__card--ecology {
   background-image: url("/__spritemap#sprite-ecology-view");
+}
+
+// Swiper
+
+.adv .adv__swiper {
+  width: 100%;
+  overflow: auto;
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+  }
+}
+
+.adv__swiper-wrapper {
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
