@@ -55,6 +55,8 @@
 
 .container--adv-desktop {
   @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    max-width: 1440px;
     padding-left: 0;
     padding-right: 0;
   }
