@@ -5,6 +5,11 @@
   padding-top: 37px;
   padding-bottom: 6px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 36px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     background-image:
       image-set(url("../../img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
@@ -18,13 +23,18 @@
 }
 
 .adv__title-container {
+  position: relative;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .adv__title-decoration {
-  top: 23px;
-  left: 51px;
+  top: -14px;
+  left: 36px;
 }
 
 .adv__swiper-buttons-container {
@@ -43,10 +53,10 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: 42px 42px;
-  background-position: center 20px;
+  background-position: center 19px;
   border: 1px solid rgba(2, 102, 193, 0.1);
-  padding-top: 82px;
-  padding-bottom: 18px;
+  padding-top: 81px;
+  padding-bottom: 19px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -59,11 +69,17 @@
   }
 
   p {
+    width: 284px;
     margin: 0;
   }
 
   @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 340px;
     background-size: 48px 48px;
+    background-position: center 30px;
+    padding-top: 101px;
+    padding-bottom: 30px;
 
     h3 {
       font-size: 16px;
@@ -126,19 +142,31 @@
   }
 }
 
-.adv__swiper-wrapper {
+.adv .adv__swiper-wrapper {
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
-.adv__swiper-slide {
+.adv .adv__swiper-slide {
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
