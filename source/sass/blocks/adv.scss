@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 135px;
+    padding-bottom: 185px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
@@ -47,12 +48,20 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (min-width: $desktop-width) {
+    top: -29px;
+  }
 }
 
 .adv__swiper-buttons-container {
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: -86px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
   }
 }
@@ -127,6 +136,7 @@
   @media (min-width: $desktop-width) {
     width: 380px;
     min-height: 329px;
+    padding-top: 111px;
 
     h3 {
       font-size: 18px;
@@ -135,6 +145,12 @@
 
     p {
       width: 340px;
+    }
+
+    &::before {
+      top: 39px;
+      width: 54px;
+      height: 54px;
     }
   }
 }
@@ -154,10 +170,27 @@
   --bg-icon: 24px 22px;
   --bg-position: 29px;
 
+  br {
+    display: none;
+  }
+
   background-image: url("/__spritemap#sprite-knowledge-view");
 
   @media (min-width: $tablet-width) {
     --bg-position: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --bg-position: 55px;
+
+    span {
+      white-space: nowrap;
+      padding-left: 3px;
+    }
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -175,6 +208,10 @@
   @media (min-width: $tablet-width) {
     --bg-position: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    --bg-position: 56px;
+  }
 }
 
 .adv__card--routes {
@@ -185,6 +222,10 @@
 
   @media (min-width: $tablet-width) {
     --bg-position: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --bg-position: 54px;
   }
 }
 
@@ -206,6 +247,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 92px;
+
+    span {
+      margin-left: 0;
+    }
+
     br {
       display: none;
     }
