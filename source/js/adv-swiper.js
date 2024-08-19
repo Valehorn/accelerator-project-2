@@ -10,9 +10,9 @@ const initAdvSwiper = () => {
 
     breakpoints: {
       1440: {
-        slidesPerView: 1,
+        slidesPerView: 3.2,
         slidesPerGroup: 2,
-        spaceBetween: 10,
+        spaceBetween: 30,
         speed: 1900,
         loop: true,
         navigation: {
