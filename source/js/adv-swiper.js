@@ -10,18 +10,22 @@ const initAdvSwiper = () => {
 
     breakpoints: {
       1440: {
-        slidesPerView: 3.2,
+        slidesPerView: 'auto',
         slidesPerGroup: 2,
         spaceBetween: 30,
         speed: 1900,
         loop: true,
-        navigation: {
-          nextEl: '.adv__swiper-button-next',
-          prevEl: '.adv__swiper-button-prev',
-        },
+        centeredSlides: true,
+        initialSlide: 2,
+        allowTouchMove: false,
         enabled: true,
       }
-    }
+    },
+
+    navigation: {
+      nextEl: '.adv__swiper-button-next',
+      prevEl: '.adv__swiper-button-prev',
+    },
   });
 };
 

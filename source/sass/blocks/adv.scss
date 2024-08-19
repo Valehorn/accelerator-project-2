@@ -10,6 +10,10 @@
     padding-bottom: 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 135px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     background-image:
       image-set(url("../../img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
@@ -28,6 +32,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -118,10 +126,15 @@
 
   @media (min-width: $desktop-width) {
     width: 380px;
+    min-height: 329px;
 
     h3 {
       font-size: 18px;
       line-height: 18px;
+    }
+
+    p {
+      width: 340px;
     }
   }
 }
@@ -191,6 +204,12 @@
     padding-top: 100px;
     padding-bottom: 31px;
   }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 // Swiper
@@ -217,7 +236,7 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 0;
+    gap: normal;
   }
 }
 
@@ -230,7 +249,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 380px;
   }
 }
 
+.adv .adv__swiper-slide:nth-last-of-type(1),
+.adv .adv__swiper-slide:nth-last-of-type(2),
+.adv .adv__swiper-slide:nth-last-of-type(3) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
