@@ -14,6 +14,11 @@ const initGallerySwiper = () => {
       nextEl: '.gallery__swiper-button-next',
       prevEl: '.gallery__swiper-button-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+    },
   });
 };
 
