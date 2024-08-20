@@ -24,10 +24,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 123px;
+
     p:not([class]) {
       font-size: 16px;
       line-height: 24px;
       width: 592px;
+      margin-bottom: 45px;
+
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -39,6 +46,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .gallery__title-decoration {
@@ -46,6 +57,10 @@
 
   @media (min-width: $tablet-width) {
     top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -17px;
   }
 }
 
@@ -99,4 +114,20 @@
 
 .gallery__image {
   display: block;
+}
+
+// Swiper
+
+.gallery__swiper {
+  width: 100%;
+}
+
+.gallery .gallery__swiper-slide {
+  @media (min-width: $desktop-width) {
+    width: auto;
+
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+  }
 }

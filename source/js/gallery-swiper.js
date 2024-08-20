@@ -30,7 +30,7 @@ const destroyGallerySwiper = () => {
 };
 
 const checkBreakpoint = () => {
-  if (window.innerWidth <= 1440) {
+  if (window.innerWidth < 1440) {
     if (!gallerySwiper) {
       initGallerySwiper();
     }
