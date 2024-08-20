@@ -13,13 +13,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 60px;
 
     p:not([class]) {
       font-size: 14px;
       line-height: 22px;
       width: 420px;
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
   }
 
@@ -67,7 +67,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -56px;
+    top: -55px;
     right: 45px;
     display: block;
   }
@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     gap: normal;
     width: 252px;
-    height: 418px;
+    height: 419px;
   }
 
   @media (min-width: $desktop-width) {
