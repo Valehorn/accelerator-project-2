@@ -123,6 +123,7 @@
   line-height: 16px;
   color: $primary-text-color;
   opacity: 0.5;
+  pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 
   @media (min-width: $tablet-width) {
@@ -134,7 +135,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: $primary-text-color;
+  color: rgba(45, 56, 63, 0.5);
   border: 1px solid transparent;
   border-radius: 2px;
   width: 258px;
@@ -157,8 +158,12 @@
   }
 }
 
+.form__input--error {
+  border: 1px solid $form-error;
+}
+
 .form__input:focus-visible::placeholder {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .form__input:focus-visible + .form__label,

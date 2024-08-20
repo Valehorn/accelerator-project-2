@@ -5,6 +5,7 @@ import { initSwiperTraining } from './training-swiper';
 import { initSwiperReviews } from './reviews-swiper';
 import { initAdvSwiper } from './adv-swiper';
 import { initGallerySwiper } from './gallery-swiper';
+import './form-validate';
 
 const bootStrap = () => {
   burgerMenuToggle();
