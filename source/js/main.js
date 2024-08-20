@@ -4,6 +4,7 @@ import { initSwiperTours } from './tours-swiper';
 import { initSwiperTraining } from './training-swiper';
 import { initSwiperReviews } from './reviews-swiper';
 import { initAdvSwiper } from './adv-swiper';
+import { initGallerySwiper } from './gallery-swiper';
 
 const bootStrap = () => {
   burgerMenuToggle();
@@ -12,6 +13,7 @@ const bootStrap = () => {
   initSwiperTraining();
   initSwiperReviews();
   initAdvSwiper();
+  initGallerySwiper();
 };
 
 bootStrap();
