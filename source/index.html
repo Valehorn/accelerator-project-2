@@ -143,7 +143,8 @@
                       srcset="img/img/hero/hero-card-tablet@1x.png 1x, img/hero/hero-card-tablet@2x.png 2x" width="442"
                       height="365">
                     <img class="hero__card-image-content" src="img/hero/hero-card-tablet@1x.png"
-                      alt="Фотография природы и туристов на Камчатке." width="442" height="365" draggable="false" loading="lazy">
+                      alt="Фотография природы и туристов на Камчатке." width="442" height="365" draggable="false"
+                      loading="lazy">
                   </picture>
                 </div>
                 <button class="button hero__card-button button--primary" type="button">Смотреть тур</button>
@@ -904,7 +905,8 @@
                     <h3>Экспертиза и знания</h3>
                     <p>Наша команда опытных гидов имеет обширные знания о местности, погодных <span>условиях и технике
                         безопасности.
-                      Это&nbsp;</span><br>гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться
+                        Это&nbsp;</span><br>гарантирует, что наши клиенты находятся в надёжных руках и могут в полной
+                      мере насладиться
                       опытом
                       без опасений.
                     </p>
@@ -978,163 +980,178 @@
     </div>
     <section class="gallery" data-test="gallery" id="gallery">
       <div class="container">
-        <h2 class="gallery__title title">Фотогалерея</h2>
+        <div class="gallery__title-container">
+          <h2 class="gallery__title title">Фотогалерея</h2>
+          <p class="gallery__title-decoration title-decoration" aria-hidden="true">Фотогалерея</p>
+        </div>
         <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
           нашего сайта.</p>
       </div>
-      <div class="gallery__content-container">
-        <div class="swiper swiper-gallery">
-          <div class="swiper-slide swiper-slide-gallery">
-            <div class="gallery__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-1@1x.webp 1x, img/gallery/gallery-desktop-1@2x.webp 2x"
-                  width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-1@1x.webp 1x, img/gallery/gallery-tablet-1@2x.webp 2x" width="260"
-                  height="425">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-1@1x.jpg 1x, img/gallery/gallery-desktop-1@2x.jpg 2x" width="284"
-                  height="463">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-1@1x.jpg 1x, img/gallery/gallery-tablet-1@2x.jpg 2x" width="260"
-                  height="425">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-mobile-1@1x.webp 1x, img/gallery/gallery-mobile-1@2x.webp 2x" width="158"
-                  height="266">
-                <img class="gallery__image" src="img/gallery/gallery-mobile-1@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="266" draggable="false" loading="lazy">
-              </picture>
+      <div class="gallery__overflow swiper-overflow">
+        <div class="gallery__swiper-buttons-container">
+          <button class="button gallery__swiper-button-prev swiper__button swiper__button--prev button--primary"
+            type="button">
+            <span class="visually-hidden">Кнопка предыдущего слайда</span>
+          </button>
+          <button class="button gallery__swiper-button-next swiper__button swiper__button--next button--primary"
+            type="button">
+            <span class="visually-hidden">Кнопка следующего слайда</span>
+          </button>
+        </div>
+        <div class="gallery__swiper swiper">
+          <div class="gallery__swiper-wrapper swiper-wrapper">
+            <div class="gallery__swiper-slide swiper-slide">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-1@1x.webp 1x, img/gallery/gallery-desktop-1@2x.webp 2x"
+                    width="284" height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-1@1x.webp 1x, img/gallery/gallery-tablet-1@2x.webp 2x"
+                    width="260" height="425">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-1@1x.jpg 1x, img/gallery/gallery-desktop-1@2x.jpg 2x"
+                    width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-1@1x.jpg 1x, img/gallery/gallery-tablet-1@2x.jpg 2x" width="260"
+                    height="425">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-mobile-1@1x.webp 1x, img/gallery/gallery-mobile-1@2x.webp 2x"
+                    width="158" height="266">
+                  <img class="gallery__image" src="img/gallery/gallery-mobile-1@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="266" draggable="false" loading="lazy">
+                </picture>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-gallery">
-            <div class="gallery__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-2-1@1x.webp 1x, img/gallery/gallery-desktop-2-1@2x.webp 2x"
-                  width="284" height="232">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-2-1@1x.webp 1x,img/gallery/gallery-tablet-2-1@2x.webp 2x"
-                  width="252" height="210">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-2-1@1x.jpg 1x, img/gallery/gallery-desktop-2-1@2x.jpg 2x"
-                  width="284" height="232">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-2-1@1x.jpg 1x, img/gallery/gallery-tablet-2-1@2x.jpg 2x"
-                  width="252" height="210">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-mobile-2-1@1x.webp 1x, img/gallery/gallery-mobile-2-1@2x.webp 2x"
-                  width="158" height="135">
-                <img class="gallery__image" src="img/gallery/gallery-mobile-2-1@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="135" draggable="false" loading="lazy">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-2-2@1x.webp 1x, img/gallery/gallery-desktop-2-2@2x.webp 2x"
-                  width="284" height="232">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-2-2@1x.webp 1x,img/gallery/gallery-tablet-2-2@2x.webp 2x"
-                  width="252" height="210">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-2-2@1x.jpg 1x, img/gallery/gallery-desktop-2-2@2x.jpg 2x"
-                  width="284" height="232">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-2-2@1x.jpg 1x, img/gallery/gallery-tablet-2-2@2x.jpg 2x"
-                  width="252" height="210">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-mobile-2-2@1x.webp 1x, img/gallery/gallery-mobile-2-2@2x.webp 2x"
-                  width="158" height="135">
-                <img class="gallery__image" src="img/gallery/gallery-mobile-2-2@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="135" draggable="false" loading="lazy">
-              </picture>
+            <div class="gallery__swiper-slide swiper-slide">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-2-1@1x.webp 1x, img/gallery/gallery-desktop-2-1@2x.webp 2x"
+                    width="284" height="232">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-2-1@1x.webp 1x,img/gallery/gallery-tablet-2-1@2x.webp 2x"
+                    width="252" height="210">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-2-1@1x.jpg 1x, img/gallery/gallery-desktop-2-1@2x.jpg 2x"
+                    width="284" height="232">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-2-1@1x.jpg 1x, img/gallery/gallery-tablet-2-1@2x.jpg 2x"
+                    width="252" height="210">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-mobile-2-1@1x.webp 1x, img/gallery/gallery-mobile-2-1@2x.webp 2x"
+                    width="158" height="135">
+                  <img class="gallery__image" src="img/gallery/gallery-mobile-2-1@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="135" draggable="false" loading="lazy">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-2-2@1x.webp 1x, img/gallery/gallery-desktop-2-2@2x.webp 2x"
+                    width="284" height="232">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-2-2@1x.webp 1x,img/gallery/gallery-tablet-2-2@2x.webp 2x"
+                    width="252" height="210">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-2-2@1x.jpg 1x, img/gallery/gallery-desktop-2-2@2x.jpg 2x"
+                    width="284" height="232">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-2-2@1x.jpg 1x, img/gallery/gallery-tablet-2-2@2x.jpg 2x"
+                    width="252" height="210">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-mobile-2-2@1x.webp 1x, img/gallery/gallery-mobile-2-2@2x.webp 2x"
+                    width="158" height="135">
+                  <img class="gallery__image" src="img/gallery/gallery-mobile-2-2@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="135" draggable="false" loading="lazy">
+                </picture>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-gallery">
-            <div class="gallery__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-3@1x.webp 1x, img/gallery/gallery-desktop-3@2x.webp 2x"
-                  width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-3@1x.webp 1x, img/gallery/gallery-tablet-3@2x.webp 2x" width="260"
-                  height="425">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-3@1x.jpg 1x, img/gallery/gallery-desktop-3@2x.jpg 2x" width="284"
-                  height="463">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-tablet-3@1x.jpg 1x, img/gallery/gallery-tablet-3@2x.jpg 2x" width="260"
-                  height="425">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-tablet-3@1x.webp 1x, img/gallery/gallery-tablet-3@2x.webp 2x" width="158"
-                  height="266">
-                <img class="gallery__image" src="img/gallery/gallery-tablet-3@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="266" draggable="false" loading="lazy">
-              </picture>
+            <div class="gallery__swiper-slide swiper-slide">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-3@1x.webp 1x, img/gallery/gallery-desktop-3@2x.webp 2x"
+                    width="284" height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-3@1x.webp 1x, img/gallery/gallery-tablet-3@2x.webp 2x"
+                    width="260" height="425">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-3@1x.jpg 1x, img/gallery/gallery-desktop-3@2x.jpg 2x"
+                    width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-tablet-3@1x.jpg 1x, img/gallery/gallery-tablet-3@2x.jpg 2x" width="260"
+                    height="425">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-tablet-3@1x.webp 1x, img/gallery/gallery-tablet-3@2x.webp 2x"
+                    width="158" height="266">
+                  <img class="gallery__image" src="img/gallery/gallery-tablet-3@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="266" draggable="false" loading="lazy">
+                </picture>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-gallery">
-            <div class="gallery__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x, img/gallery/gallery-desktop-4-1@2x.webp 2x"
-                  width="284" height="232">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x,img/gallery/gallery-desktop-4-1@2x.webp 2x"
-                  width="252" height="210">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-4-1@1x.jpg 1x, img/gallery/gallery-desktop-4-1@2x.jpg 2x"
-                  width="284" height="232">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-4-1@1x.jpg 1x, img/gallery/gallery-desktop-4-1@2x.jpg 2x"
-                  width="252" height="210">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x, img/gallery/gallery-desktop-4-1@2x.webp 2x"
-                  width="158" height="135">
-                <img class="gallery__image" src="img/gallery/gallery-desktop-4-1@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="135" draggable="false" loading="lazy">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x, img/gallery/gallery-desktop-4-2@2x.webp 2x"
-                  width="284" height="232">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x,img/gallery/gallery-desktop-4-2@2x.webp 2x"
-                  width="252" height="210">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-4-2@1x.jpg 1x, img/gallery/gallery-desktop-4-2@2x.jpg 2x"
-                  width="284" height="232">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-4-2@1x.jpg 1x, img/gallery/gallery-desktop-4-2@2x.jpg 2x"
-                  width="252" height="210">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x, img/gallery/gallery-desktop-4-2@2x.webp 2x"
-                  width="158" height="135">
-                <img class="gallery__image" src="img/gallery/gallery-desktop-4-2@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="135" draggable="false" loading="lazy">
-              </picture>
+            <div class="gallery__swiper-slide swiper-slide">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x, img/gallery/gallery-desktop-4-1@2x.webp 2x"
+                    width="284" height="232">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x,img/gallery/gallery-desktop-4-1@2x.webp 2x"
+                    width="252" height="210">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-4-1@1x.jpg 1x, img/gallery/gallery-desktop-4-1@2x.jpg 2x"
+                    width="284" height="232">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-4-1@1x.jpg 1x, img/gallery/gallery-desktop-4-1@2x.jpg 2x"
+                    width="252" height="210">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-desktop-4-1@1x.webp 1x, img/gallery/gallery-desktop-4-1@2x.webp 2x"
+                    width="158" height="135">
+                  <img class="gallery__image" src="img/gallery/gallery-desktop-4-1@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="135" draggable="false" loading="lazy">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x, img/gallery/gallery-desktop-4-2@2x.webp 2x"
+                    width="284" height="232">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x,img/gallery/gallery-desktop-4-2@2x.webp 2x"
+                    width="252" height="210">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-4-2@1x.jpg 1x, img/gallery/gallery-desktop-4-2@2x.jpg 2x"
+                    width="284" height="232">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-4-2@1x.jpg 1x, img/gallery/gallery-desktop-4-2@2x.jpg 2x"
+                    width="252" height="210">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-desktop-4-2@1x.webp 1x, img/gallery/gallery-desktop-4-2@2x.webp 2x"
+                    width="158" height="135">
+                  <img class="gallery__image" src="img/gallery/gallery-desktop-4-2@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="135" draggable="false" loading="lazy">
+                </picture>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-gallery">
-            <div class="gallery__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
-                  width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
-                  width="260" height="425">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/gallery/gallery-desktop-5@1x.jpg 1x, img/gallery/gallery-desktop-5@2x.jpg 2x" width="284"
-                  height="463">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/gallery/gallery-desktop-5@1x.jpg 1x, img/gallery/gallery-desktop-5@2x.jpg 2x" width="260"
-                  height="425">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
-                  width="158" height="266">
-                <img class="gallery__image" src="img/gallery/gallery-desktop-5@1x.jpg" alt="Фотография галлереи"
-                  width="158" height="266" draggable="false" loading="lazy">
-              </picture>
+            <div class="gallery__swiper-slide swiper-slide">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
+                    width="284" height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
+                    width="260" height="425">
+                  <source type="image/jpeg" media="(min-width: 1440px)"
+                    srcset="img/gallery/gallery-desktop-5@1x.jpg 1x, img/gallery/gallery-desktop-5@2x.jpg 2x"
+                    width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/gallery/gallery-desktop-5@1x.jpg 1x, img/gallery/gallery-desktop-5@2x.jpg 2x"
+                    width="260" height="425">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gallery/gallery-desktop-5@1x.webp 1x, img/gallery/gallery-desktop-5@2x.webp 2x"
+                    width="158" height="266">
+                  <img class="gallery__image" src="img/gallery/gallery-desktop-5@1x.jpg" alt="Фотография галлереи"
+                    width="158" height="266" draggable="false" loading="lazy">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -1166,7 +1183,8 @@
         </li>
         <li class="contacts__item contacts__item--email">
           <h3 class="contacts__item-title">Email</h3>
-          <a class="contacts__item-description link" href="mailto:info@lifetour.com" draggable="false">info@lifetour.com</a>
+          <a class="contacts__item-description link" href="mailto:info@lifetour.com"
+            draggable="false">info@lifetour.com</a>
         </li>
         <li class="contacts__item contacts__item--address">
           <h3 class="contacts__item-title">Адрес</h3>

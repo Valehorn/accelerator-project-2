@@ -1,26 +1,30 @@
 @use "../global/variables";
 
 .gallery {
-  p {
+  p:not(:first-of-type) {
     margin: 0;
   }
 
   @media (min-width: $tablet-width) {
-    p {
+    p:not(:first-of-type) {
       font-size: 14px;
       line-height: 22px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    p {
+    p:not(:first-of-type) {
       font-size: 16px;
       line-height: 24px;
     }
   }
 }
 
-.gallery__content-container {
+.gallery__title-container {
+  position: relative;
+}
+
+.gallery__overflow {
   max-width: 320px;
   margin: 0 auto;
 
@@ -45,6 +49,22 @@
   @media (min-width: $desktop-width) {
     width: 284px;
     height: 463px;
+  }
+}
+
+.gallery__swiper-buttons-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: none;
   }
 }
 
