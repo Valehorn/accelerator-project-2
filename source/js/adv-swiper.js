@@ -42,6 +42,7 @@ const checkBreakpoint = () => {
       initAdvSwiper();
     }
   } else {
+    advSwiper.slideTo(0);
     destroyAdvSwiper();
   }
 };
