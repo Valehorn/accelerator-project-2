@@ -1,21 +1,23 @@
 @use "../global/variables";
 
 .gallery {
-  p:not(:first-of-type) {
+  p {
     margin: 0;
   }
 
   @media (min-width: $tablet-width) {
-    p:not(:first-of-type) {
+    p:not([class]) {
       font-size: 14px;
       line-height: 22px;
+      width: 420px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    p:not(:first-of-type) {
+    p:not([class]) {
       font-size: 16px;
       line-height: 24px;
+      width: 592px;
     }
   }
 }
