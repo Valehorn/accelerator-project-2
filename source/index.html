@@ -1158,15 +1158,19 @@
       </div>
     </section>
     <section class="form" data-test="form">
-      <div class="container">
+      <div class="form__container container">
         <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-        <form class="form__question" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
-          <label class="visually-hidden" for="email">Email</label>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
-          <button class="button form__button" type="submit">Отправить</button>
+        <p>Заполните форму и наш оператор <br>свяжется<br> с вами для консультации.</p>
+        <form class="form__card" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__group">
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 (000)-000-00-00" required>
+            <label class="form__label form__label--phone" for="phone">Телефон</label>
+          </div>
+          <div class="form__group">
+            <input class="form__input" type="email" name="email" id="email" placeholder="adventurefan@mail.ru" required>
+            <label class="form__label form__label--email" for="email">Email</label>
+          </div>
+          <button class="button form__button button--primary" type="submit">Отправить</button>
         </form>
       </div>
     </section>
