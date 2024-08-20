@@ -69,10 +69,18 @@
       url("../../img/form/form-bg-desktop@2x.webp") type("image/webp") 2x,
       url("../../img/form/form-bg-desktop@1x.png") type("image/png") 1x,
       url("../../img/form/form-bg-desktop@2x.png") type("image/png") 2x);
+    min-height: 760px;
+    padding-top: 296px;
 
     h2 {
       font-size: 35px;
       line-height: 35px;
+      margin-bottom: 18px;
+    }
+
+    p:not([class]) {
+      width: auto;
+      margin-bottom: 39px;
     }
   }
 }
@@ -95,6 +103,11 @@
 
   @media (min-width: $tablet-width) {
     gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -159,5 +172,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 180px;
   }
 }
