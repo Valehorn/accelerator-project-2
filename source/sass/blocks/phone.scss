@@ -16,3 +16,8 @@
     line-height: 18px;
   }
 }
+
+.phone--disabled {
+  color: $disabled;
+  pointer-events: none;
+}
