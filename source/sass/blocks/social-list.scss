@@ -1,6 +1,9 @@
 @use "../global/variables";
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
   list-style: none;
   padding: 0;
   margin: 0;

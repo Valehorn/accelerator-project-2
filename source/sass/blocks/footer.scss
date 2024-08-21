@@ -1,14 +1,80 @@
 @use "../global/variables";
 
-.footer__logo-container {
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $primary-text-color;
+    opacity: 0.2;
+  }
+}
+
+.footer__logo-link {
+  display: block;
   width: 142px;
   height: 42px;
 }
 
+.footer__nav {
+  width: 100%;
+}
+
 .footer__nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.footer__nav-item {
+  &:has([href="#tours"]) {
+    order: 1;
+  }
+
+  &:has([href="#training"]) {
+    order: 3;
+  }
+
+  &:has([href="#about"]) {
+    order: 5;
+  }
+
+  &:has([href="#reviews"]) {
+    order: 2;
+  }
+
+  &:has([href="#gallery"]) {
+    order: 4;
+  }
+
+  &:has([href="#contacts"]) {
+    order: 6;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:has([href="#tours"]),
+    &:has([href="#training"]),
+    &:has([href="#about"]),
+    &:has([href="#reviews"]),
+    &:has([href="#gallery"]),
+    &:has([href="#contacts"]) {
+      order: 0;
+    }
+  }
 }
 
 .footer__nav-link {
