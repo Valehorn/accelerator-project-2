@@ -4,6 +4,7 @@ const phoneInput = form.querySelector('.form__input--phone');
 let isValid = true;
 
 const validateEmail = () => {
+  emailInput.setCustomValidity('');
   const emailValue = emailInput.value;
   const emailValidate = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(рф|[a-zA-Z]{2,})$/i;
 
@@ -18,6 +19,7 @@ const validateEmail = () => {
 };
 
 const validatePhone = () => {
+  phoneInput.setCustomValidity('');
   const phoneValue = phoneInput.value;
   const phoneValidate = /^(?:\d[-\d]*){11}$/;
   if (!phoneValidate.test(phoneValue)) {
