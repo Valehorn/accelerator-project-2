@@ -58,7 +58,7 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,6 +198,10 @@
 
     br {
       display: none;
+    }
+
+    &::before {
+      left: 4px;
     }
   }
 
