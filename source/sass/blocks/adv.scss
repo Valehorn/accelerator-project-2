@@ -188,6 +188,8 @@
   @media (min-width: $desktop-width) {
     --bg-position: 55px;
 
+    overflow: hidden;
+
     span {
       white-space: nowrap;
       padding-left: 3px;
