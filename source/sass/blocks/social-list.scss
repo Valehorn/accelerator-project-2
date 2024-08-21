@@ -12,6 +12,10 @@
     grid-column: 1 / -1;
     justify-self: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+  }
 }
 
 .social-list__link {
