@@ -2,10 +2,6 @@
 
 .footer {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 23px;
   padding-top: 23px;
   padding-bottom: 20px;
 
@@ -19,6 +15,13 @@
     background-color: $primary-text-color;
     opacity: 0.2;
   }
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
 }
 
 .footer__logo-link {
@@ -35,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  gap: 11px 43px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -82,6 +86,8 @@
   line-height: 14px;
   text-decoration: none;
   color: $primary-text-color;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
