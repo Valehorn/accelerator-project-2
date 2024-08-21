@@ -5,9 +5,11 @@ let isValid = true;
 
 const validateEmail = () => {
   const emailValue = emailInput.value;
-  const emailValidate = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(рф|[a-zA-Z]{2,})$/;
+  const emailValidate = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(рф|[a-zA-Z]{2,})$/i;
 
   if (!emailValidate.test(emailValue)) {
+    emailInput.setCustomValidity('Email должен содержать латинские буквы, арабские цифры, символы: "-","+", ".". Имя должно быть разделено @. Домен должен быть отделен ".". Допускается домен кириллицей ".рф"');
+    emailInput.reportValidity();
     emailInput.classList.add('form__input--error');
     isValid = false;
   } else {
@@ -19,6 +21,8 @@ const validatePhone = () => {
   const phoneValue = phoneInput.value;
   const phoneValidate = /^(?:\d[-\d]*){11}$/;
   if (!phoneValidate.test(phoneValue)) {
+    phoneInput.setCustomValidity('Телефон может принимать только арабские цифры, пробелы и символ "-", а так же должен быть не менее 11 символов.');
+    phoneInput.reportValidity();
     phoneInput.classList.add('form__input--error');
     isValid = false;
   } else {

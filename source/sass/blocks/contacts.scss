@@ -1,18 +1,29 @@
 @use "../global/variables";
 
 .contacts {
+  padding-top: 36px;
+
   p {
-    font-size: 14px;
-    line-height: 20px;
     margin: 0;
   }
 
+  p:not([class]) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $tablet-width) {
-    p {
+    p:not([class]) {
       font-size: 16px;
       line-height: 24px;
     }
   }
+}
+
+.contacts__title-container {
+  position: relative;
+  margin-bottom: 29px;
 }
 
 .contacts__list {
