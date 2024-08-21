@@ -7,6 +7,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
 
 .social-list__link {
