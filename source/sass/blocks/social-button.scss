@@ -1,0 +1,37 @@
+@use "../global/variables";
+
+.social-button {
+  transition: background-color 0.5s ease, border 0.5s ease;
+
+  &::after {
+    transition: background-color 0.5s ease;
+  }
+
+  &:hover {
+    border: 1px solid $primary-text-color;
+  }
+
+  &:focus-visible {
+    outline: 1px solid transparent;
+    border: 1px solid transparent;
+  }
+
+  &:active {
+    background-color: $primary-color;
+    border: 1px solid transparent;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.social-button--disabled {
+  border: 1px solid $primary-text-color;
+  opacity: 0.3;
+  pointer-events: none;
+
+  &::after {
+    background-color: $primary-text-color;
+  }
+}
