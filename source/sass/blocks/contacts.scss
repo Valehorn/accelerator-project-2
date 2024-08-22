@@ -260,11 +260,11 @@
 
   &::before {
     position: absolute;
-    top: 12px;
-    left: -7px;
+    bottom: 0;
+    left: 0;
     content: "";
-    width: calc(100% + 14px);
-    height: calc(100% - 14px);
+    width: 100%;
+    height: 1px;
     border: 1px solid transparent;
     pointer-events: none;
     transition: border 0.5s ease;
@@ -277,13 +277,7 @@
   }
 
   &:focus-visible {
-    outline: 1px solid transparent;
-
-    &::before {
-      top: 2px;
-      height: calc(100% - 4px);
-      border: 1px solid $primary-text-color;
-    }
+    outline: 1px solid $primary-text-color;
   }
 
   &:active {
