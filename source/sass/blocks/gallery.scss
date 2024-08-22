@@ -122,6 +122,14 @@
   width: 100%;
 }
 
+// Переполнение для галлереи.
+.gallery__swiper-wrapper {
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    gap: 5px 0;
+  }
+}
+
 .gallery .gallery__swiper-slide {
   @media (min-width: $desktop-width) {
     width: auto;

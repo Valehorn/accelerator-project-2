@@ -121,6 +121,8 @@
   left: 15px;
   font-size: 16px;
   line-height: 16px;
+  max-height: 33px;
+  overflow: hidden;
   color: $primary-text-color;
   opacity: 0.5;
   pointer-events: none;
