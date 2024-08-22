@@ -12,6 +12,7 @@
     height: calc(100% - 10px);
     border: 1px solid transparent;
     transition: border 0.5s ease;
+    pointer-events: none;
   }
 }
 

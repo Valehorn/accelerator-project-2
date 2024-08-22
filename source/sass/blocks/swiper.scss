@@ -26,6 +26,18 @@
       transition: background-color 0.5 ease-in;
     }
   }
+
+  &:hover {
+    &::after {
+      background-color: $primary-text-color;
+    }
+  }
+
+  &:focus-visible {
+    &::after {
+      background-color: $primary-text-color;
+    }
+  }
 }
 
 .swiper__button--prev {

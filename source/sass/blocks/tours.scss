@@ -24,6 +24,11 @@
   }
 }
 
+.tours__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .tours__title-container {
   position: relative;
   margin-bottom: 39px;
@@ -94,6 +99,7 @@
 
 .tours__link {
   position: relative;
+  align-self: center;
   display: block;
   font-size: 14px;
   line-height: 14px;
@@ -104,17 +110,40 @@
   text-align: center;
   letter-spacing: 0.04em;
   padding-right: 17px;
+  transition: color 0.5s ease-out;
 
   &::after {
     position: absolute;
-    right: 47px;
+    right: -3px;
     content: "";
     width: 9px;
     height: 14px;
-    background-image: url("/__spritemap#sprite-arrow-view");
-    background-repeat: no-repeat;
-    background-size: 9px 14px;
-    background-position: right center;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: 9px 14px;
+    mask-position: right center;
+    background-color: $primary-text-color;
+    transition: background-color 0.5s ease-out;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.2);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 0.2);
+    }
+  }
+
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $active;
+
+    &::after {
+      background-color: $active;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -122,14 +151,24 @@
     line-height: 16px;
 
     &::after {
-      right: calc(34% - 3px);
+      right: calc(34% - 76px);
       top: 1px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      right: calc(41% - 3px);
+      top: 0;
+      right: calc(41% - 91px);
     }
+  }
+}
+
+.tours__link--disabled {
+  color: $disabled;
+  pointer-events: none;
+
+  &::after {
+    background-color: $disabled;
   }
 }
