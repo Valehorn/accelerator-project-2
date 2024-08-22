@@ -191,7 +191,6 @@
 }
 
 .header__nav-link {
-  position: relative;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
@@ -200,32 +199,9 @@
   text-decoration: none;
   transition: color 0.5s ease;
 
-  &::before {
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    content: "";
-    width: calc(100% + 10px);
-    height: calc(100% - 10px);
-    border: 1px solid transparent;
-    transition: border 0.5s ease;
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 3px;
-    left: 50%;
-    transform: translateX(-48%);
-    content: "";
-    width: calc(100% + 10px);
-    height: 1px;
-    background-color: transparent;
-    transition: background-color 0.5s ease;
-  }
-
   &:hover {
-    &::after {
-      background-color: #ffffff;
+    &::before {
+      border-bottom: 1px solid #ffffff;
     }
   }
 
@@ -240,8 +216,8 @@
   &:active {
     color: $active;
 
-    &::after {
-      background-color: transparent;
+    &::before {
+      border-bottom: 1px solid transparent;
     }
   }
 
