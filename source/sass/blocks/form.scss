@@ -143,11 +143,27 @@
   padding-left: 15px;
   padding-right: 5px;
   caret-color: $primary-text-color;
+  transition: border 0.5s ease, color 0.5 ease;
 
   &::placeholder {
     color: $primary-color;
     opacity: 0;
     transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $primary-text-color;
+    border: 1px solid transparent;
+  }
+
+  &:disabled {
+    color: $disabled;
+    border: 1px solid $disabled;
+    background-color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {
