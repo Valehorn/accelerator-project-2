@@ -16,7 +16,6 @@ const openMenu = () => {
 const closeMenu = () => {
   body.classList.remove('page-body--menu-open');
   nav.classList.remove('header__nav--open');
-  header.style.setProperty('--bg-opacity', '0');
   document.removeEventListener('keydown', onDocumentKeyDown);
 };
 
