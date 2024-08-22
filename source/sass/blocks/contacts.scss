@@ -234,32 +234,40 @@
   }
 }
 
-
-.nav-link--disabled {
-  color: $disabled;
-  pointer-events: none;
-}
-
-.contacts__item-description {
-  position: relative;
+.contacts__item-description,
+.contacts__item-address {
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   text-decoration: none;
   color: $primary-text-color;
   width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+.contacts__item-description {
+  position: relative;
   transition: opacity 0.5s ease;
 
   &::before {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: -7px;
     content: "";
     width: calc(100% + 14px);
     height: calc(100% - 14px);
     border: 1px solid transparent;
     pointer-events: none;
-    transition: border 0.5s ease, top 0.5s ease;
+    transition: border 0.5s ease;
   }
 
   &:hover {
@@ -285,15 +293,11 @@
       border: 1px solid transparent;
     }
   }
+}
 
-  @media (min-width: $tablet-width) {
-    line-height: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }
+.contacts__item-description--disabled {
+  color: $disabled;
+  pointer-events: none;
 }
 
 .contacts__map-container {
