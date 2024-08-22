@@ -193,7 +193,7 @@
     mask-repeat: no-repeat;
     mask-size: 14px 8px;
     mask-position: center;
-    background-color: $primary-text-color;
+    background-color: $primary-color;
   }
 }
 
@@ -234,7 +234,7 @@
     content: "";
     width: 2px;
     height: 89%;
-    background-color: $primary-color;
+    background-color: $secondary-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -278,7 +278,7 @@
     width: 14px;
     height: 14px;
     border-radius: 100%;
-    background-color: $primary-color;
+    background-color: $secondary-color;
   }
 
   &::after {
@@ -292,7 +292,7 @@
     mask-size: var(--process-size);
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $primary-text-color;
+    background-color: $primary-color;
   }
 
   @media (min-width: $tablet-width) {

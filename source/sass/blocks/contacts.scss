@@ -240,7 +240,7 @@
   line-height: 20px;
   font-style: normal;
   text-decoration: none;
-  color: $primary-text-color;
+  color: $primary-color;
   width: fit-content;
 
   @media (min-width: $tablet-width) {
@@ -272,12 +272,12 @@
 
   &:hover {
     &::before {
-      border-bottom: 1px solid $primary-text-color;
+      border-bottom: 1px solid $primary-color;
     }
   }
 
   &:focus-visible {
-    outline: 1px solid $primary-text-color;
+    outline: 1px solid $primary-color;
   }
 
   &:active {

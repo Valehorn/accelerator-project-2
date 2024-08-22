@@ -106,7 +106,7 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: $primary-text-color;
+  color: $primary-color;
   text-align: center;
   letter-spacing: 0.04em;
   padding-right: 17px;
@@ -122,7 +122,7 @@
     mask-repeat: no-repeat;
     mask-size: 9px 14px;
     mask-position: right center;
-    background-color: $primary-text-color;
+    background-color: $primary-color;
     transition: background-color 0.5s ease-out;
   }
 
@@ -135,7 +135,7 @@
   }
 
   &:focus-visible {
-    color: $primary-color;
+    color: $secondary-color;
   }
 
   &:active {

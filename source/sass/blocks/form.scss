@@ -123,7 +123,7 @@
   line-height: 16px;
   max-height: 33px;
   overflow: hidden;
-  color: $primary-text-color;
+  color: $primary-color;
   opacity: 0.5;
   pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -144,21 +144,21 @@
   min-height: 50px;
   padding-left: 15px;
   padding-right: 5px;
-  caret-color: $primary-text-color;
+  caret-color: $primary-color;
   transition: border 0.5s ease, color 0.5s ease;
 
   &::placeholder {
-    color: $primary-color;
+    color: $secondary-color;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   &:hover {
-    border: 1px solid $primary-color;
+    border: 1px solid $secondary-color;
   }
 
   &:focus-visible {
-    outline: 1px solid $primary-text-color;
+    outline: 1px solid $primary-color;
     border: 1px solid transparent;
   }
 

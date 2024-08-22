@@ -29,13 +29,13 @@
 
   &:hover {
     &::after {
-      background-color: $primary-text-color;
+      background-color: $primary-color;
     }
   }
 
   &:focus-visible {
     &::after {
-      background-color: $primary-text-color;
+      background-color: $primary-color;
     }
   }
 

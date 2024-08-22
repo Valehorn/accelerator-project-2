@@ -2,7 +2,7 @@
 
 .header {
   position: relative;
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: #ffffff;
   padding-top: 15px;
   padding-bottom: 12px;
@@ -95,7 +95,7 @@
 
   &:hover {
     &::after {
-      background-color: $primary-text-color;
+      background-color: $primary-color;
     }
   }
 
@@ -104,7 +104,7 @@
   }
 
   &:active {
-    background-color: $primary-text-color;
+    background-color: $primary-color;
 
     &::after {
       background-color: #ffffff;
@@ -135,7 +135,7 @@
 .header__nav-list {
   position: absolute;
   list-style: none;
-  background-color: $primary-color;
+  background-color: $secondary-color;
   margin: 0;
   padding: 0;
   visibility: hidden;
@@ -246,7 +246,7 @@
   }
 
   &:focus-visible {
-    color: $primary-text-color;
+    color: $primary-color;
   }
 
   &:active {
