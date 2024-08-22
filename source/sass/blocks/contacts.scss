@@ -234,12 +234,57 @@
   }
 }
 
+
+.nav-link--disabled {
+  color: $disabled;
+  pointer-events: none;
+}
+
 .contacts__item-description {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   text-decoration: none;
   color: $primary-text-color;
+  width: fit-content;
+  transition: opacity 0.5s ease;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: -7px;
+    content: "";
+    width: calc(100% + 14px);
+    height: calc(100% - 14px);
+    border: 1px solid transparent;
+    pointer-events: none;
+    transition: border 0.5s ease, top 0.5s ease;
+  }
+
+  &:hover {
+    &::before {
+      border-bottom: 1px solid $primary-text-color;
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid transparent;
+
+    &::before {
+      top: 2px;
+      height: calc(100% - 4px);
+      border: 1px solid $primary-text-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+
+    &::before {
+      border: 1px solid transparent;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     line-height: 22px;

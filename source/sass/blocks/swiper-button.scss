@@ -38,6 +38,12 @@
       background-color: $primary-text-color;
     }
   }
+
+  &:active {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .swiper-button--prev {

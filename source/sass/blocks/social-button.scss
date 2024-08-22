@@ -1,10 +1,10 @@
 @use "../global/variables";
 
 .social-button {
-  transition: background-color 0.5s ease, border 0.5s ease;
+  transition: background-color 0.3s ease, border 0.3s ease;
 
   &::after {
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
   }
 
   &:hover {
