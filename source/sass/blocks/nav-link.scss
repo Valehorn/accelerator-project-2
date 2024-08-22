@@ -14,3 +14,8 @@
     transition: border 0.5s ease;
   }
 }
+
+.nav-link--disabled {
+  color: $disabled;
+  pointer-events: none;
+}

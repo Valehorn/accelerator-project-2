@@ -114,11 +114,11 @@
   }
 
   &:focus-visible {
-    outline: 2px solid $primary-text-color;
+    outline: 2px solid #ffffff;
   }
 
   &:active {
-    background-color: #7acd8d;
+    background-color: $primary-text-color;
 
     &::after {
       background-color: #ffffff;
@@ -230,11 +230,6 @@
     font-weight: 400;
     padding: 8px 0;
   }
-}
-
-.header__nav-link--disabled {
-  color: $disabled;
-  pointer-events: none;
 }
 
 .header__logo-container {

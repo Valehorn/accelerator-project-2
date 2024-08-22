@@ -256,6 +256,7 @@
 }
 
 .hero__pagination-bullet {
+  position: relative;
   width: 16px;
   height: 16px;
   border: 1px solid #ffffff;
@@ -263,6 +264,41 @@
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.5s ease;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    content: "";
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    transition: border 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus-visible {
+    outline: 1px solid transparent;
+
+    &::before {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled {
+    border-color: $disabled;
+    background-color: $disabled;
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 20px;
