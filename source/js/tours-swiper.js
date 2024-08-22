@@ -47,18 +47,18 @@ const initSwiperTours = () => {
     const nextButton = document.querySelector('.tours__swiper-button-next');
 
     if (swiper.isBeginning) {
-      prevButton.classList.add('swiper__button--disabled');
+      prevButton.classList.add('swiper-button--disabled');
       prevButton.disabled = true;
     } else {
-      prevButton.classList.remove('swiper__button--disabled');
+      prevButton.classList.remove('swiper-button--disabled');
       prevButton.disabled = false;
     }
 
     if (swiper.isEnd) {
-      nextButton.classList.add('swiper__button--disabled');
+      nextButton.classList.add('swiper-button--disabled');
       nextButton.disabled = true;
     } else {
-      nextButton.classList.remove('swiper__button--disabled');
+      nextButton.classList.remove('swiper-button--disabled');
       nextButton.disabled = false;
     }
   }

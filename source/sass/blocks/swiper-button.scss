@@ -1,6 +1,6 @@
 @use "../global/variables";
 
-.swiper__button {
+.swiper-button {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -40,14 +40,14 @@
   }
 }
 
-.swiper__button--prev {
+.swiper-button--prev {
   @media (min-width: $tablet-width) {
     transform: rotate(180deg);
     top: calc(50% + 1px);
   }
 }
 
-.swiper__button--disabled {
+.swiper-button--disabled {
   background-color: #999999;
   pointer-events: none;
 }
