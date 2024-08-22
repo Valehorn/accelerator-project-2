@@ -267,6 +267,7 @@
   border-radius: 100%;
   background-color: transparent;
   cursor: pointer;
+  pointer-events: none;
   transition: background-color 0.5s ease;
 
   &::before {
@@ -308,6 +309,10 @@
   @media (min-width: $tablet-width) {
     width: 20px;
     height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    pointer-events: auto;
   }
 }
 
