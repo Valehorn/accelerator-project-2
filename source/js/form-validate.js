@@ -61,4 +61,3 @@ emailInput.addEventListener('input', onInputChange);
 phoneInput.addEventListener('input', onInputChange);
 
 form.addEventListener('submit', onFormSubmit);
-
