@@ -4,12 +4,10 @@ const body = document.querySelector('.page-body');
 const nav = document.querySelector('.header__nav');
 const burgerButton = document.querySelector('.header__button-burger-menu');
 const navList = document.querySelector('.header__nav-list');
-const header = document.querySelector('.header');
 
 const openMenu = () => {
   body.classList.add('page-body--menu-open');
   nav.classList.add('header__nav--open');
-  header.style.setProperty('--bg-opacity', '1');
   document.addEventListener('keydown', onDocumentKeyDown);
 };
 

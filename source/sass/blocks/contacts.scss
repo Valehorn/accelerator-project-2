@@ -313,6 +313,19 @@
   }
 }
 
+.contacts__bg-wrapper {
+  background-color: #808080;
+  min-height: 343px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 324px;
+  }
+}
+
 .contacts__map-image {
   display: block;
 }
