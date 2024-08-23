@@ -30,7 +30,10 @@ const validatePhone = () => {
 };
 
 const onInputChange = () => {
-  if (isFormSubmitted) {
+  if (emailInput.value === '' || phoneInput.value === '') {
+    emailInput.classList.remove('form__input--error');
+    phoneInput.classList.remove('form__input--error');
+  } else if (isFormSubmitted) {
     validateEmail();
     validatePhone();
   }
