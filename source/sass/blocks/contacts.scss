@@ -295,34 +295,36 @@
 }
 
 .contacts__map-container {
+  background-color: #808080;
   min-width: 320px;
   max-width: 320px;
+  min-height: 343px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-width: 768px;
+    min-height: 340px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    background-color: transparent;
     min-width: 600px;
     max-width: 600px;
     grid-column: 2 / -1;
     grid-row: 1 / span 3;
     padding-top: 28px;
-  }
-}
 
-.contacts__bg-wrapper {
-  background-color: #808080;
-  min-height: 343px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 340px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 324px;
+    &::before {
+      position: absolute;
+      top: 28px;
+      content: "";
+      width: 100%;
+      height: calc(100% - 78px);
+      background-color: #808080;
+      z-index: -1;
+    }
   }
 }
 
