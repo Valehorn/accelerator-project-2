@@ -11,10 +11,12 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     justify-self: center;
+    transform: translateY(4px);
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 80px;
+    transform: translateY(0);
   }
 }
 
