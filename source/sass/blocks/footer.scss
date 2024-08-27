@@ -61,14 +61,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
 }
 
 .footer__nav {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    align-self: center;
-  }
 
   @media (min-width: $desktop-width) {
     justify-self: center;
@@ -193,7 +193,9 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 7px 0;
+    align-self: start;
+    padding-top: 12px;
+    padding-bottom: 6px;
   }
 }
 
