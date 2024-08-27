@@ -8,7 +8,7 @@ const validateEmail = () => {
   const emailValidate = /^[a-zA-Zа-яА-ЯёЁ0-9.+-]+@[a-zA-Zа-яА-ЯёЁ0-9-]+\.(рф|[a-zA-Z]{2,})$/;
 
   if (!emailValidate.test(emailValue) && isFormSubmitted) {
-    emailInput.setCustomValidity('Email должен содержать латинские буквы или кириллцу, арабские цифры, символы: "-","+", ".". Имя должно быть разделено @. Домен должен быть отделен ".". Допускается домен кириллицей ".рф"');
+    emailInput.setCustomValidity('Email должен содержать латинские буквы или кириллицу, арабские цифры, символы: "-","+", ".". Имя должно быть разделено @. Домен должен быть отделен ".". Допускается домен кириллицей ".рф"');
     emailInput.classList.add('form__input--error');
   } else {
     emailInput.setCustomValidity('');
