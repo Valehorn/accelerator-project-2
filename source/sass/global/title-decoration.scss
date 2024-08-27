@@ -6,18 +6,22 @@
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
+  max-height: 52px;
   color: $primary-color;
   opacity: 0.03;
+  overflow: hidden;
   pointer-events: none;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 40px;
+    max-height: 80px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 55px;
     line-height: 55px;
+    max-height: 110px;
   }
 }
