@@ -37,6 +37,10 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
 }
 
 .header__nav {
@@ -150,6 +154,7 @@
     gap: 30px;
     width: 838px;
     padding-left: 46px;
+    padding-top: 10px;
   }
 
   @media (max-width: $pre-desktop-width) {
@@ -260,6 +265,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
+    transform: translate(0, 0);
+    padding-top: 15px;
   }
 }
